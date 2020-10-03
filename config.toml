@@ -3,4 +3,17 @@ baseURL = ""
 languageCode = "en-us"
 title = "My New Hugo Site"
 
+# Novela settings
 
+paginate = 6
+
+[social]
+twitter= "https://twitter.com/forestryio"
+github= "https://github.com/forestryio/novela-hugo-starter"
+linkedin= "https://www.linkedin.com/company/forestry.io"
+instagram = "#"
+dribbble = "#"
+youtube = "#"
+
+[taxonomies]
+author = "authors"
