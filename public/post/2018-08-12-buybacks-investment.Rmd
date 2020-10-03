@@ -1,6 +1,6 @@
 ---
 title: "Buybacks & Investment"
-author: "Hamdi Ahmed"
+author: "Hamdi"
 date: '2019-05-12'
 slug: buybacks-investment
 categories: []
