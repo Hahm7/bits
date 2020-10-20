@@ -60,7 +60,7 @@ As a component of GDP, measuring investment helps us to measure an economy’s o
 
 
 ```{r echo = TRUE, eval=FALSE}
-blogdown::shortcode_html('highlight', 'R', .content = mydir <- "C:/Users/Hamdi/Desktop"
+mydir <- "C:/Users/Hamdi/Desktop"
 
 volatile2 <-read_excel("volatility2.xlsx")
 
@@ -153,7 +153,7 @@ gif_file <- save_gif({for (i in seq(1,M)){
     print(paste(ii,"out of",20))
   }
 }, gif_file = paste0(mydir,"/volatile3.gif"), width = 1200, height = 800, res = 144, delay=1/10)
-utils::browseURL(gif_file))
+utils::browseURL(gif_file)
 ```
 </p>
 </details>
@@ -214,8 +214,6 @@ nominal_gdp <- ggplot(fixed.df, aes(x =date, y = percent, color = indicator, lab
   ggtitle(title) +
   mytheme +
   labs(x = "Date", y = "Percent of GDP", caption = capt)
-
-
 
 ```
 

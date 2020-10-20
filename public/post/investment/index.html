@@ -253,7 +253,7 @@ xmlns="http://www.w3.org/2000/svg"
 <details>
 <summary>Click here for the graph code</summary>
 <p>
-<pre class="r"><code>blogdown::shortcode_html(&#39;highlight&#39;, &#39;R&#39;, .content = mydir &lt;- &quot;C:/Users/Hamdi/Desktop&quot;
+<pre class="r"><code>mydir &lt;- &quot;C:/Users/Hamdi/Desktop&quot;
 
 volatile2 &lt;-read_excel(&quot;volatility2.xlsx&quot;)
 
@@ -346,7 +346,7 @@ gif_file &lt;- save_gif({for (i in seq(1,M)){
     print(paste(ii,&quot;out of&quot;,20))
   }
 }, gif_file = paste0(mydir,&quot;/volatile3.gif&quot;), width = 1200, height = 800, res = 144, delay=1/10)
-utils::browseURL(gif_file))</code></pre>
+utils::browseURL(gif_file)</code></pre>
 </p>
 </details>
 <p><img src="/images/volatile3.gif" /></p>
