@@ -57,6 +57,8 @@ As a component of GDP, measuring investment helps us to measure an economy’s o
 <details>
 <summary>Click here for the graph code</summary>
 <p>
+
+{{< highlight r >}}
 ```{r echo = TRUE, eval=FALSE}
 mydir <- "C:/Users/Hamdi/Desktop"
 
@@ -153,6 +155,7 @@ gif_file <- save_gif({for (i in seq(1,M)){
 }, gif_file = paste0(mydir,"/volatile3.gif"), width = 1200, height = 800, res = 144, delay=1/10)
 utils::browseURL(gif_file)
 ```
+{{< /highlight >}}
 </p>
 </details>
 
