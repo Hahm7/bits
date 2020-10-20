@@ -59,7 +59,7 @@ As a component of GDP, measuring investment helps us to measure an economy’s o
 <p>
 
 
-```{r echo = TRUE, eval=FALSE}
+```{r echo = FALSE, eval=FALSE}
 blogdown::shortcode_html('highlight', 'R', .content = 'mydir <- "C:/Users/Hamdi/Desktop"
 
 volatile2 <-read_excel("volatility2.xlsx")
