@@ -39,8 +39,8 @@ As a component of GDP, measuring investment helps us to measure an economy’s o
 <p>
 
 
-{{< highlight html >}}
 
+```r
 mydir <- "C:/Users/Hamdi/Desktop"
 
 volatile2 <-read_excel("volatility2.xlsx")
@@ -109,9 +109,11 @@ volatile.plot<-function(i=1){
 
 
 volatile.plot(M) 
+```
 
+<img src="/post/2020-10-22-test2_files/figure-html/unnamed-chunk-2-1.png" width="672" />
 
-
+```r
 files = list.files(
   'content/', '[.](Rmd)$', full.names = TRUE,
   recursive = TRUE
@@ -134,9 +136,868 @@ gif_file <- save_gif({for (i in seq(1,M)){
     print(paste(ii,"out of",20))
   }
 }, gif_file = paste0(mydir,"/volatile3.gif"), width = 1200, height = 800, res = 144, delay=1/10)
-utils::browseURL(gif_file)
-{{< /highlight >}}
+```
 
+```
+## geom_path: Each group consists of only one observation. Do you need to adjust
+## the group aesthetic?
+```
+
+```
+## [1] "1 out of 150"
+```
+
+```
+## [1] "2 out of 150"
+```
+
+```
+## [1] "3 out of 150"
+```
+
+```
+## [1] "4 out of 150"
+```
+
+```
+## [1] "5 out of 150"
+```
+
+```
+## [1] "6 out of 150"
+```
+
+```
+## [1] "7 out of 150"
+```
+
+```
+## [1] "8 out of 150"
+```
+
+```
+## [1] "9 out of 150"
+```
+
+```
+## [1] "10 out of 150"
+```
+
+```
+## [1] "11 out of 150"
+```
+
+```
+## [1] "12 out of 150"
+```
+
+```
+## [1] "13 out of 150"
+```
+
+```
+## [1] "14 out of 150"
+```
+
+```
+## [1] "15 out of 150"
+```
+
+```
+## [1] "16 out of 150"
+```
+
+```
+## [1] "17 out of 150"
+```
+
+```
+## [1] "18 out of 150"
+```
+
+```
+## [1] "19 out of 150"
+```
+
+```
+## [1] "20 out of 150"
+```
+
+```
+## [1] "21 out of 150"
+```
+
+```
+## [1] "22 out of 150"
+```
+
+```
+## [1] "23 out of 150"
+```
+
+```
+## [1] "24 out of 150"
+```
+
+```
+## [1] "25 out of 150"
+```
+
+```
+## [1] "26 out of 150"
+```
+
+```
+## [1] "27 out of 150"
+```
+
+```
+## [1] "28 out of 150"
+```
+
+```
+## [1] "29 out of 150"
+```
+
+```
+## [1] "30 out of 150"
+```
+
+```
+## [1] "31 out of 150"
+```
+
+```
+## [1] "32 out of 150"
+```
+
+```
+## [1] "33 out of 150"
+```
+
+```
+## [1] "34 out of 150"
+```
+
+```
+## [1] "35 out of 150"
+```
+
+```
+## [1] "36 out of 150"
+```
+
+```
+## [1] "37 out of 150"
+```
+
+```
+## [1] "38 out of 150"
+```
+
+```
+## [1] "39 out of 150"
+```
+
+```
+## [1] "40 out of 150"
+```
+
+```
+## [1] "41 out of 150"
+```
+
+```
+## [1] "42 out of 150"
+```
+
+```
+## [1] "43 out of 150"
+```
+
+```
+## [1] "44 out of 150"
+```
+
+```
+## [1] "45 out of 150"
+```
+
+```
+## [1] "46 out of 150"
+```
+
+```
+## [1] "47 out of 150"
+```
+
+```
+## [1] "48 out of 150"
+```
+
+```
+## [1] "49 out of 150"
+```
+
+```
+## [1] "50 out of 150"
+```
+
+```
+## [1] "51 out of 150"
+```
+
+```
+## [1] "52 out of 150"
+```
+
+```
+## [1] "53 out of 150"
+```
+
+```
+## [1] "54 out of 150"
+```
+
+```
+## [1] "55 out of 150"
+```
+
+```
+## [1] "56 out of 150"
+```
+
+```
+## [1] "57 out of 150"
+```
+
+```
+## [1] "58 out of 150"
+```
+
+```
+## [1] "59 out of 150"
+```
+
+```
+## [1] "60 out of 150"
+```
+
+```
+## [1] "61 out of 150"
+```
+
+```
+## [1] "62 out of 150"
+```
+
+```
+## [1] "63 out of 150"
+```
+
+```
+## [1] "64 out of 150"
+```
+
+```
+## [1] "65 out of 150"
+```
+
+```
+## [1] "66 out of 150"
+```
+
+```
+## [1] "67 out of 150"
+```
+
+```
+## [1] "68 out of 150"
+```
+
+```
+## [1] "69 out of 150"
+```
+
+```
+## [1] "70 out of 150"
+```
+
+```
+## [1] "71 out of 150"
+```
+
+```
+## [1] "72 out of 150"
+```
+
+```
+## [1] "73 out of 150"
+```
+
+```
+## [1] "74 out of 150"
+```
+
+```
+## [1] "75 out of 150"
+```
+
+```
+## [1] "76 out of 150"
+```
+
+```
+## [1] "77 out of 150"
+```
+
+```
+## [1] "78 out of 150"
+```
+
+```
+## [1] "79 out of 150"
+```
+
+```
+## [1] "80 out of 150"
+```
+
+```
+## [1] "81 out of 150"
+```
+
+```
+## [1] "82 out of 150"
+```
+
+```
+## [1] "83 out of 150"
+```
+
+```
+## [1] "84 out of 150"
+```
+
+```
+## [1] "85 out of 150"
+```
+
+```
+## [1] "86 out of 150"
+```
+
+```
+## [1] "87 out of 150"
+```
+
+```
+## [1] "88 out of 150"
+```
+
+```
+## [1] "89 out of 150"
+```
+
+```
+## [1] "90 out of 150"
+```
+
+```
+## [1] "91 out of 150"
+```
+
+```
+## [1] "92 out of 150"
+```
+
+```
+## [1] "93 out of 150"
+```
+
+```
+## [1] "94 out of 150"
+```
+
+```
+## [1] "95 out of 150"
+```
+
+```
+## [1] "96 out of 150"
+```
+
+```
+## [1] "97 out of 150"
+```
+
+```
+## [1] "98 out of 150"
+```
+
+```
+## [1] "99 out of 150"
+```
+
+```
+## [1] "100 out of 150"
+```
+
+```
+## [1] "101 out of 150"
+```
+
+```
+## [1] "102 out of 150"
+```
+
+```
+## [1] "103 out of 150"
+```
+
+```
+## [1] "104 out of 150"
+```
+
+```
+## [1] "105 out of 150"
+```
+
+```
+## [1] "106 out of 150"
+```
+
+```
+## [1] "107 out of 150"
+```
+
+```
+## [1] "108 out of 150"
+```
+
+```
+## [1] "109 out of 150"
+```
+
+```
+## [1] "110 out of 150"
+```
+
+```
+## [1] "111 out of 150"
+```
+
+```
+## [1] "112 out of 150"
+```
+
+```
+## [1] "113 out of 150"
+```
+
+```
+## [1] "114 out of 150"
+```
+
+```
+## [1] "115 out of 150"
+```
+
+```
+## [1] "116 out of 150"
+```
+
+```
+## [1] "117 out of 150"
+```
+
+```
+## [1] "118 out of 150"
+```
+
+```
+## [1] "119 out of 150"
+```
+
+```
+## [1] "120 out of 150"
+```
+
+```
+## [1] "121 out of 150"
+```
+
+```
+## [1] "122 out of 150"
+```
+
+```
+## [1] "123 out of 150"
+```
+
+```
+## [1] "124 out of 150"
+```
+
+```
+## [1] "125 out of 150"
+```
+
+```
+## [1] "126 out of 150"
+```
+
+```
+## [1] "127 out of 150"
+```
+
+```
+## [1] "128 out of 150"
+```
+
+```
+## [1] "129 out of 150"
+```
+
+```
+## [1] "130 out of 150"
+```
+
+```
+## [1] "131 out of 150"
+```
+
+```
+## [1] "132 out of 150"
+```
+
+```
+## [1] "133 out of 150"
+```
+
+```
+## [1] "134 out of 150"
+```
+
+```
+## [1] "135 out of 150"
+```
+
+```
+## [1] "136 out of 150"
+```
+
+```
+## [1] "137 out of 150"
+```
+
+```
+## [1] "138 out of 150"
+```
+
+```
+## [1] "139 out of 150"
+```
+
+```
+## [1] "140 out of 150"
+```
+
+```
+## [1] "141 out of 150"
+```
+
+```
+## [1] "142 out of 150"
+```
+
+```
+## [1] "143 out of 150"
+```
+
+```
+## [1] "144 out of 150"
+```
+
+```
+## [1] "145 out of 150"
+```
+
+```
+## [1] "146 out of 150"
+```
+
+```
+## [1] "147 out of 150"
+```
+
+```
+## [1] "148 out of 150"
+```
+
+```
+## [1] "149 out of 150"
+```
+
+```
+## [1] "150 out of 150"
+```
+
+```
+## [1] "1 out of 20"
+```
+
+```
+## [1] "2 out of 20"
+```
+
+```
+## [1] "3 out of 20"
+```
+
+```
+## [1] "4 out of 20"
+```
+
+```
+## [1] "5 out of 20"
+```
+
+```
+## [1] "6 out of 20"
+```
+
+```
+## [1] "7 out of 20"
+```
+
+```
+## [1] "8 out of 20"
+```
+
+```
+## [1] "9 out of 20"
+```
+
+```
+## [1] "10 out of 20"
+```
+
+```
+## [1] "11 out of 20"
+```
+
+```
+## [1] "12 out of 20"
+```
+
+```
+## [1] "13 out of 20"
+```
+
+```
+## [1] "14 out of 20"
+```
+
+```
+## [1] "15 out of 20"
+```
+
+```
+## [1] "16 out of 20"
+```
+
+```
+## [1] "17 out of 20"
+```
+
+```
+## [1] "18 out of 20"
+```
+
+```
+## [1] "19 out of 20"
+```
+
+```
+## [1] "20 out of 20"
+## 
+Frame 1 (0%)
+Frame 2 (1%)
+Frame 3 (1%)
+Frame 4 (2%)
+Frame 5 (2%)
+Frame 6 (3%)
+Frame 7 (4%)
+Frame 8 (4%)
+Frame 9 (5%)
+Frame 10 (5%)
+Frame 11 (6%)
+Frame 12 (7%)
+Frame 13 (7%)
+Frame 14 (8%)
+Frame 15 (8%)
+Frame 16 (9%)
+Frame 17 (10%)
+Frame 18 (10%)
+Frame 19 (11%)
+Frame 20 (11%)
+Frame 21 (12%)
+Frame 22 (12%)
+Frame 23 (13%)
+Frame 24 (14%)
+Frame 25 (14%)
+Frame 26 (15%)
+Frame 27 (15%)
+Frame 28 (16%)
+Frame 29 (17%)
+Frame 30 (17%)
+Frame 31 (18%)
+Frame 32 (18%)
+Frame 33 (19%)
+Frame 34 (20%)
+Frame 35 (20%)
+Frame 36 (21%)
+Frame 37 (21%)
+Frame 38 (22%)
+Frame 39 (22%)
+Frame 40 (23%)
+Frame 41 (24%)
+Frame 42 (24%)
+Frame 43 (25%)
+Frame 44 (25%)
+Frame 45 (26%)
+Frame 46 (27%)
+Frame 47 (27%)
+Frame 48 (28%)
+Frame 49 (28%)
+Frame 50 (29%)
+Frame 51 (30%)
+Frame 52 (30%)
+Frame 53 (31%)
+Frame 54 (31%)
+Frame 55 (32%)
+Frame 56 (32%)
+Frame 57 (33%)
+Frame 58 (34%)
+Frame 59 (34%)
+Frame 60 (35%)
+Frame 61 (35%)
+Frame 62 (36%)
+Frame 63 (37%)
+Frame 64 (37%)
+Frame 65 (38%)
+Frame 66 (38%)
+Frame 67 (39%)
+Frame 68 (40%)
+Frame 69 (40%)
+Frame 70 (41%)
+Frame 71 (41%)
+Frame 72 (42%)
+Frame 73 (42%)
+Frame 74 (43%)
+Frame 75 (44%)
+Frame 76 (44%)
+Frame 77 (45%)
+Frame 78 (45%)
+Frame 79 (46%)
+Frame 80 (47%)
+Frame 81 (47%)
+Frame 82 (48%)
+Frame 83 (48%)
+Frame 84 (49%)
+Frame 85 (50%)
+Frame 86 (50%)
+Frame 87 (51%)
+Frame 88 (51%)
+Frame 89 (52%)
+Frame 90 (52%)
+Frame 91 (53%)
+Frame 92 (54%)
+Frame 93 (54%)
+Frame 94 (55%)
+Frame 95 (55%)
+Frame 96 (56%)
+Frame 97 (57%)
+Frame 98 (57%)
+Frame 99 (58%)
+Frame 100 (58%)
+Frame 101 (59%)
+Frame 102 (60%)
+Frame 103 (60%)
+Frame 104 (61%)
+Frame 105 (61%)
+Frame 106 (62%)
+Frame 107 (62%)
+Frame 108 (63%)
+Frame 109 (64%)
+Frame 110 (64%)
+Frame 111 (65%)
+Frame 112 (65%)
+Frame 113 (66%)
+Frame 114 (67%)
+Frame 115 (67%)
+Frame 116 (68%)
+Frame 117 (68%)
+Frame 118 (69%)
+Frame 119 (70%)
+Frame 120 (70%)
+Frame 121 (71%)
+Frame 122 (71%)
+Frame 123 (72%)
+Frame 124 (72%)
+Frame 125 (73%)
+Frame 126 (74%)
+Frame 127 (74%)
+Frame 128 (75%)
+Frame 129 (75%)
+Frame 130 (76%)
+Frame 131 (77%)
+Frame 132 (77%)
+Frame 133 (78%)
+Frame 134 (78%)
+Frame 135 (79%)
+Frame 136 (80%)
+Frame 137 (80%)
+Frame 138 (81%)
+Frame 139 (81%)
+Frame 140 (82%)
+Frame 141 (82%)
+Frame 142 (83%)
+Frame 143 (84%)
+Frame 144 (84%)
+Frame 145 (85%)
+Frame 146 (85%)
+Frame 147 (86%)
+Frame 148 (87%)
+Frame 149 (87%)
+Frame 150 (88%)
+Frame 151 (88%)
+Frame 152 (89%)
+Frame 153 (90%)
+Frame 154 (90%)
+Frame 155 (91%)
+Frame 156 (91%)
+Frame 157 (92%)
+Frame 158 (92%)
+Frame 159 (93%)
+Frame 160 (94%)
+Frame 161 (94%)
+Frame 162 (95%)
+Frame 163 (95%)
+Frame 164 (96%)
+Frame 165 (97%)
+Frame 166 (97%)
+Frame 167 (98%)
+Frame 168 (98%)
+Frame 169 (99%)
+Frame 170 (100%)
+## Finalizing encoding... done!
+```
+
+```r
+utils::browseURL(gif_file)
+```
 </p>
 </details>
 
@@ -152,7 +1013,7 @@ Both Gross and Net (which takes into account depreciation) investment as a share
 
 
 
-<img src="/post/2020-10-22-test2_files/figure-html/unnamed-chunk-3-1.png" width="672" />
+<img src="/post/2020-10-22-test2_files/figure-html/unnamed-chunk-4-1.png" width="672" />
 
 However, these are nominal ratios, which means any price effects aren’t striped out. Over the decades, we've seen Moore’s law in <a href="https://en.wikipedia.org/wiki/Moore%27s_law" target="_blank">action</a>, where the number of components packed into a computer chip has doubled every 2 years or so. This has meant new computers and other technologies have doubled in speed and have become more powerful at lower <a href="https://www.washingtonpost.com/opinions/the-power-of-moores-law/2015/04/19/f1806c98-e6b6-11e4-9a6a-c1ab95a0600b_story.html?utm_term=.67a8c53ba071" target="_blank">costs</a>. In the 1970s, supercomputers were bulky, stationary things which used up a lot of power. Supercomputers can now be found in our pockets.
 
@@ -163,9 +1024,9 @@ While investment in equipment makes up the bulk of total investment, investment 
 
 
 
-<img src="/post/2020-10-22-test2_files/figure-html/unnamed-chunk-5-1.png" width="672" />
-
 <img src="/post/2020-10-22-test2_files/figure-html/unnamed-chunk-6-1.png" width="672" />
+
+<img src="/post/2020-10-22-test2_files/figure-html/unnamed-chunk-7-1.png" width="672" />
 
 
 It therefore makes sense to look at the real ratios of investment to gdp to see if the nominal figure was just capturing falling costs. I use log ratios to avoid misinterpreting chained dollar ratios as this article <a href="http://econbrowser.com/archives/2018/03/assessing-trends-in-real-shares" target="_blank">explains</a>. I then use the log ratio and express it relative to a base year value (1967 in my case) as explained <a href="http://econbrowser.com/archives/2015/08/to-log-or-not-to-log-part-iii" target="_blank">here</a>, to get the cumulative percentage changes. A percentage shows a part of the whole. Meanwhile, a cumulative percentage is derived from adding a percentage from one period to a percentage from the next period which will help us see if the part (Gross and Net Investment) of the whole (GDP), have become more or less important over the years. 
@@ -176,7 +1037,7 @@ If this ratio falls below 0, then the real investment growth has cumulatively fa
 
 
 
-<img src="/post/2020-10-22-test2_files/figure-html/unnamed-chunk-8-1.png" width="672" />
+<img src="/post/2020-10-22-test2_files/figure-html/unnamed-chunk-9-1.png" width="672" />
 
 There's been a growing gap between the gross and net cumulative growth rates since the early 2000s. In fact, if we change the starting point to this period, we find that net investment has cumulatively fallen short of cumulative GDP growth.
 
@@ -184,7 +1045,7 @@ There's been a growing gap between the gross and net cumulative growth rates sin
 
 
 
-<img src="/post/2020-10-22-test2_files/figure-html/unnamed-chunk-10-1.png" width="672" />
+<img src="/post/2020-10-22-test2_files/figure-html/unnamed-chunk-11-1.png" width="672" />
 
 If we then look at net investment as a share of gross investment, we discover that it’s been falling steadily in nominal and real terms.
 
@@ -192,9 +1053,9 @@ If we then look at net investment as a share of gross investment, we discover th
 
 
 
-<img src="/post/2020-10-22-test2_files/figure-html/unnamed-chunk-12-1.png" width="672" />
-
 <img src="/post/2020-10-22-test2_files/figure-html/unnamed-chunk-13-1.png" width="672" />
+
+<img src="/post/2020-10-22-test2_files/figure-html/unnamed-chunk-14-1.png" width="672" />
 
 This suggests a greater amount of investment is being devoted to replacing older capital stock instead of adding to stock. What could explain this?
 
