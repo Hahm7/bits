@@ -58,7 +58,7 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
  }
  
  .token.punctuation {
-     color: #ccc;
+     color: #67cdcc;
  }
  
  .token.tag,
@@ -73,9 +73,12 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
  }
  
  .token.boolean,
- .token.number,
- .token.function {
+ .token.number {
      color: #f08d49;
+ }
+
+ .token.function {
+     color: #cc99cc;
  }
  
  .token.property,
