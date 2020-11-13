@@ -214,6 +214,8 @@ img{
           animation-name: image-load-in;
   -webkit-animation-duration: 0.8s;
           animation-duration: 0.8s;
+  -webkit-box-shadow: 0 30px 60px -10px rgba(0,0,0,.2), 0 18px 36px -18px rgba(0,0,0,.22);
+          box-shadow: 0 30px 60px -10px rgba(0,0,0,.2), 0 18px 36px -18px rgba(0,0,0,.22);
 }
 
 @-webkit-keyframes image-load-in {
