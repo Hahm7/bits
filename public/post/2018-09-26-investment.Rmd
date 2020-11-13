@@ -54,9 +54,6 @@ Investment helps raise an economy’s capital stock, which is another way of say
 
 As a component of GDP, measuring investment helps us to measure an economy’s output. It’s the most volatile component as the animation below shows — it rises and falls by larger amounts.
 
-<details>
-<summary>Click here for the graph code</summary>
-<p>
 
 
 ```{r echo = TRUE, eval=FALSE}
@@ -111,8 +108,6 @@ volatile.plot<-function(i=1){
               hjust=0,nudge_x=30,size=2.5)+
     theme(legend.position="bottom",
           legend.title = element_blank(),
-          plot.background=element_rect(fill = "#f1f1ef"),
-          legend.background = element_rect(fill = "#f1f1ef"),
           panel.background = element_rect(fill = 'white'),
           plot.caption=element_text(hjust=0,size=9),
           legend.text = element_text(colour = "black"),
@@ -155,10 +150,9 @@ gif_file <- save_gif({for (i in seq(1,M)){
 }, gif_file = paste0(mydir,"/volatile3.gif"), width = 1200, height = 800, res = 144, delay=1/10)
 utils::browseURL(gif_file)
 ```
-</p>
-</details>
 
-![](/images/volatile3.gif) 
+
+![My Picture](static/img/volatile3.gif) 
 
 
 This volatile behaviour can be explained by how optimistic firms are about the future and investment decisions being optional. You need to buy food and pay for shelter regularly to sustain yourself but you don’t need to buy a new machinery for your business or learn a certain skill if you think it’s going to be worthless to you. Even if you plan to invest, future outcomes are uncertain. With the gains of investment being realised in the long term, it’s not a surprise that investment activity is sensitive to this uncertainty.
@@ -195,8 +189,6 @@ title = "Gross and Net Investment as a Percentage of GDP"
 
 mytheme <- theme(legend.position = "bottom",
                  legend.title = element_blank(),
-                 plot.background=element_rect(fill = "#f1f1ef"),
-                 legend.background = element_rect(fill = "#f1f1ef"),
                  panel.background = element_rect(fill = 'white'),
                  plot.caption=element_text(colour = "black", hjust=0,size=9),
                  plot.title = element_text(colour = "black", hjust=0.5, size=16),
@@ -279,8 +271,6 @@ as a Percentage of Gross Investment"
 
 mytheme <- theme(legend.position = "bottom",
                  legend.title = element_blank(),
-                 plot.background=element_rect(fill = "#f1f1ef"),
-                 legend.background = element_rect(fill = "#f1f1ef"),
                  panel.background = element_rect(fill = 'white'),
                  plot.caption=element_text(colour = "black", hjust=0,size=9),
                  plot.title = element_text(colour = "black", hjust=0.5, size=16),
@@ -366,8 +356,6 @@ title = "Log Ratio of Gross and Net Investment"
 
 mytheme <- theme(legend.position = "bottom",
                  legend.title = element_blank(),
-                 plot.background=element_rect(fill = "#f1f1ef"),
-                 legend.background = element_rect(fill = "#f1f1ef"),
                  panel.background = element_rect(fill = 'white'),
                  plot.caption=element_text(colour = "black", hjust=0,size=9),
                  plot.title = element_text(colour = "black", hjust=0.5, size=16),
@@ -443,8 +431,6 @@ title = "Log Ratio of Real Net Investment Normalized to 2000"
 
 mytheme <- theme(legend.position = "bottom",
                  legend.title = element_blank(),
-                 plot.background=element_rect(fill = "#f1f1ef"),
-                 legend.background = element_rect(fill = "#f1f1ef"),
                  panel.background = element_rect(fill = 'white'),
                  plot.caption=element_text(colour = "black", hjust=0,size=9),
                  plot.title = element_text(colour = "black", hjust=0.5, size=16),
@@ -518,8 +504,6 @@ title = "Net Investment as a Percentage of
 
 mytheme <- theme(legend.position = "bottom",
                  legend.title = element_blank(),
-                 plot.background=element_rect(fill = "#f1f1ef"),
-                 legend.background = element_rect(fill = "#f1f1ef"),
                  panel.background = element_rect(fill = 'white'),
                  plot.caption=element_text(colour = "black", hjust=0,size=9),
                  plot.title = element_text(colour = "black", hjust=0.5, size=16),
