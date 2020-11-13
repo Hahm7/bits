@@ -93,15 +93,15 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
      color: #cc99cd;
  }
  
- .token.string{
-     color: #f5f2f0;
- }
-
+ .token.string,
  .token.char,
  .token.attr-value,
- .token.regex,
- .token.variable {
+ .token.regex {
      color: #7ec699;
+ }
+
+ .token.variable {
+     color: #f5f2f0;
  }
  
  .token.operator,
