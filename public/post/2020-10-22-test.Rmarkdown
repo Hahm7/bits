@@ -192,8 +192,6 @@ title = "Gross and Net Investment as a Percentage of GDP"
 
 mytheme <- theme(legend.position = "bottom",
                  legend.title = element_blank(),
-                 plot.background=element_rect(fill = "#f1f1ef"),
-                 legend.background = element_rect(fill = "#f1f1ef"),
                  panel.background = element_rect(fill = 'white'),
                  plot.caption=element_text(colour = "black", hjust=0,size=9),
                  plot.title = element_text(colour = "black", hjust=0.5, size=16),
