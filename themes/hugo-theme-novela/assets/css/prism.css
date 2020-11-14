@@ -74,11 +74,11 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
  
  .token.boolean,
  .token.number {
-     color: #cc99cc;
+     color: #f08d49;
  }
 
  .token.function {
-     color: #f08d49;
+     color: #cc99cc;
  }
  
  .token.property,
