@@ -177,7 +177,7 @@ colnames(fixed)[3]<-"Net"
 fixed.df <- fixed %>% 
   gather(indicator, percent, -date)
 
-ggthemr("flat")
+ggthemr("fresh")
 
 darken_swatch(0.2)
 
