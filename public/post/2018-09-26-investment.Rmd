@@ -198,7 +198,7 @@ mytheme <- theme(legend.position = "bottom",
                  axis.text.y = element_text(colour = "black", size=10)) 
 
 
-nominal_gdp <- ggplot(fixed.df, aes(x =date, y = percent, color = indicator, label = indicator)) +
+nominal_gdp2 <- ggplot(fixed.df, aes(x =date, y = percent, color = indicator, label = indicator)) +
   scale_color_manual(values=c("#0072B2", "#D55E00")) +
   geom_line(size = 1) +
   ylim(0, 16) +
@@ -211,7 +211,7 @@ nominal_gdp <- ggplot(fixed.df, aes(x =date, y = percent, color = indicator, lab
 
 ```{r echo = FALSE}
 
-nominal_gdp
+nominal_gdp2
 ```
 
 However, these are nominal ratios, which means any price effects aren’t striped out. Over the decades, we've seen Moore’s law in <a href="https://en.wikipedia.org/wiki/Moore%27s_law" target="_blank">action</a>, where the number of components packed into a computer chip has doubled every 2 years or so. This has meant new computers and other technologies have doubled in speed and have become more powerful at lower <a href="https://www.washingtonpost.com/opinions/the-power-of-moores-law/2015/04/19/f1806c98-e6b6-11e4-9a6a-c1ab95a0600b_story.html?utm_term=.67a8c53ba071" target="_blank">costs</a>. In the 1970s, supercomputers were bulky, stationary things which used up a lot of power. Supercomputers can now be found in our pockets.
