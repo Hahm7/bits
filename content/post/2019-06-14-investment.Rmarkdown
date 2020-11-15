@@ -1,5 +1,8 @@
 ---
 title: Investment
+output:
+  html_document:
+    code_folding: hide
 author: Hamdi Ahmed
 date: '2019-06-14'
 slug: investment
