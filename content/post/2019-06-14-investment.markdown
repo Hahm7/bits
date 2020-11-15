@@ -5,7 +5,7 @@ date: '2019-06-14'
 slug: investment
 categories: []
 tags: []
-hero: /images/hero-3.jpg
+hero: /images/hero-7.jpg
 excerpt: ~
 ---
 
