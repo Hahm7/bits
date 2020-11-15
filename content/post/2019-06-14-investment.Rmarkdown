@@ -1,5 +1,5 @@
 ---
-title: investment
+title: Investment
 author: Hamdi Ahmed
 date: '2019-06-14'
 slug: investment
