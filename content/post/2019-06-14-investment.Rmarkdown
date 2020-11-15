@@ -1,15 +1,13 @@
 ---
-title: "Investment"
-author: "Hamdi Ahmed"
+title: investment
+author: Hamdi Ahmed
 date: '2019-06-14'
 slug: investment
 categories: []
-description: "Imagine we find a habitable planet next to our nearest star which wasn’t the sun. That would be Proxima Centauri and it is approximately 4.2 light years away from us[...] "
 tags: []
-hero: /images/test.jpg
-dropCap: FALSE
+hero: /images/hero-3.jpg
+excerpt: ~
 ---
-
 
 
 ``` {r warning = FALSE, message = FALSE, echo = FALSE}
@@ -569,19 +567,3 @@ Meanwhile, Wes Grey and Jack Vogel survey the academic research on the returns t
 Grey and Vogel then turned to a paper by <a href="http://theinvestmentcapm.com/HouXueZhang2015RFS.pdf" target="_blank">Kewei Hou, Chen Xue, and Lu Zhang</a> examining the investment factor directly and this paper also came to the same conclusion. 
 
 So, not only is investment in the new economy resource-intensive, investment in general has a bad record in terms of returns. In realising this, maybe businesses may have wised up and would prefer to wait it out before deploying funds towards investments.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

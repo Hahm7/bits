@@ -6,24 +6,13 @@
     <description>Recent content in Posts on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 15 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 14 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>test</title>
-      <link>/post/test/</link>
-      <pubDate>Sun, 15 Nov 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/post/test/</guid>
-      <description>Imagine we find a habitable planet next to our nearest star which wasn’t the sun. That would be Proxima Centauri and it is approximately 4.2 light years away from us.
-What follows next is a gross oversimplification of space travel.
-If we assume that we could travel through space at a speed of 56,000 km/h, it would take 81,000 years to reach the planet. We of course decide to colonise it but we can’t live for 81,000 years — the current world average life expectancy is 70.</description>
-    </item>
-    
-    <item>
-      <title>Investment</title>
+      <title>investment</title>
       <link>/post/investment/</link>
       <pubDate>Fri, 14 Jun 2019 00:00:00 +0000</pubDate>
       
