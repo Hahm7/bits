@@ -7,15 +7,15 @@
         </div>
         {{ partial "social-links/social-links.html" . }}
     </div>
-</div>
-
-{{ if not .Site.Params.disable_codefolding }}
+    
+    
+    {{ if not .Site.Params.disable_codefolding }}
       <script src="{{ "js/collapse.js" | relURL }}"></script>
       <script src="{{ "js/dropdown.js" | relURL }}"></script>
       <script src="{{ "js/transition.js" | relURL }}"></script>
-{{ end }}
-
-{{ if and (not .Site.Params.disable_codefolding) (not .Params.disable_codefolding) (in (string .Content) "</pre>") }} 
+    {{ end }}
+    
+    {{ if and (not .Site.Params.disable_codefolding) (not .Params.disable_codefolding) (in (string .Content) "</pre>") }} 
   <script>
   $(document).ready(function () {
     window.initializeCodeFolding("show" === {{ if isset .Params "codefolding_show" }}{{ .Params.codefolding_show }}{{ else }}{{ default ("hide") .Site.Params.codefolding_show }}{{ end }});
@@ -23,3 +23,8 @@
   </script>
   <script src="{{ "js/codefolding.js" | relURL }}"></script>
 {{ end }}
+    
+</div>
+
+
+
