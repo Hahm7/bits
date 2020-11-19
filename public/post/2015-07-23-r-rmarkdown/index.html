@@ -147,6 +147,19 @@ summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
 
 <script src="/js/copyUrl.js"></script>
 
+
+<div id="code-folding-buttons" class="btn-group pull-right">
+  <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-_extension-text-contrast="">
+    <span>Show/Hide all code</span> 
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" style="min-width: 50px;">
+  <li><a id="rmd-show-all-code" href="#">Show All Code</a>
+  </li><li><a id="rmd-hide-all-code" href="#">Hide All Code</a></li>
+  </ul>
+</div>
+
+
         
 
 <section class="section narrow">
@@ -543,6 +556,21 @@ xmlns="http://www.w3.org/2000/svg"
 </div>
     </div>
 </div>
+
+
+      <script src="/js/collapse.js"></script>
+      <script src="/js/dropdown.js"></script>
+      <script src="/js/transition.js"></script>
+
+
+ 
+  <script>
+  $(document).ready(function () {
+    window.initializeCodeFolding("show" === "hide");
+  });
+  </script>
+  <script src="/js/codefolding.js"></script>
+
 
     </div>
 
