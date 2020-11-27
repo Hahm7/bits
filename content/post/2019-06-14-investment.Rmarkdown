@@ -57,31 +57,17 @@ As a component of GDP, measuring investment helps us to measure an economy’s o
 
 ```{r setup, include=FALSE}
 
-knitr::knit_hooks$set(source = function(x, options) {
-
-  # The original source in a fenced code block
-  source_orig <- paste(c("```r", x, "```"), collapse = "\n")
-  fold_option <- options[["code_fold"]]
-
-  # If option not set or explicitly FALSE, return regular code chunk
-  if (is.null(fold_option) | isFALSE(fold_option)) {
-   return(source_orig) 
-  } 
-  
-  summary_text <- ifelse(
-    is.character(fold_option), # If the option is text,
-    fold_option,               # use it as <summary>Label</summary>,
-    "Click to expand"          # otherwise here's a default
-  )
-  
-  # Output details tag
-  glue::glue(
-    "<details>
-      <summary>{summary_text}</summary>
-      {source_orig}
-    </details>"
-  )
-})
+knitr::knit_hooks$set(
+  summary = function(before, options, envir) {
+  if (length(options$summary)) {
+    if (before) {
+      return(sprintf("<details><summary>Code: %s</summary>\n", options$summary))
+    } else {
+      return("\n</details>")
+    }
+  }
+}
+)
 
 
 
