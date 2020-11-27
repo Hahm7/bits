@@ -212,7 +212,7 @@ xmlns="http://www.w3.org/2000/svg"
 
 <script src="/js/collapseAuthors.js"></script>
                     June 14, 2019
-                    • 9 min read
+                    • 8 min read
                 </div>
             </div>
         </header>
@@ -252,32 +252,7 @@ xmlns="http://www.w3.org/2000/svg"
 <p>Investment is what allows me to write this post on a laptop instead on pen and paper. It’s what allows me to research this topic on the internet instead of sifting through a mountain of books. It’s also what allows you to read this post anywhere without carrying around pieces of paper. Somewhere, sometime ago, someone thought about these new ways of doing things and an investment was made to turn these new methods of doing, into products.</p>
 <p>Investment helps raise an economy’s capital stock, which is another way of saying it increases the number of tools we can work with. These new tools and technologies make an impact on our productivity — how much we’re able to get done with the same amount of inputs. This includes investment in education where knowing more allows us to do more or do things in a better way.</p>
 <p>As a component of GDP, measuring investment helps us to measure an economy’s output. It’s the most volatile component as the animation below shows — it rises and falls by larger amounts.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">knitr<span style="color:#f92672">::</span>knit_hooks<span style="color:#f92672">$</span><span style="color:#a6e22e">set</span>(source <span style="color:#f92672">=</span> <span style="color:#a6e22e">function</span>(x, options) {
-
-  <span style="color:#75715e"># The original source in a fenced code block</span>
-  source_orig <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">paste</span>(<span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;```r&#34;</span>, x, <span style="color:#e6db74">&#34;```&#34;</span>), collapse <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;\n&#34;</span>)
-  fold_option <span style="color:#f92672">&lt;-</span> options[[<span style="color:#e6db74">&#34;code_fold&#34;</span>]]
-
-  <span style="color:#75715e"># If option not set or explicitly FALSE, return regular code chunk</span>
-  <span style="color:#a6e22e">if </span>(<span style="color:#a6e22e">is.null</span>(fold_option) <span style="color:#f92672">|</span> <span style="color:#a6e22e">isFALSE</span>(fold_option)) {
-   <span style="color:#a6e22e">return</span>(source_orig) 
-  } 
-  
-  summary_text <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">ifelse</span>(
-    <span style="color:#a6e22e">is.character</span>(fold_option), <span style="color:#75715e"># If the option is text,</span>
-    fold_option,               <span style="color:#75715e"># use it as &lt;summary&gt;Label&lt;/summary&gt;,</span>
-    <span style="color:#e6db74">&#34;Click to expand&#34;</span>          <span style="color:#75715e"># otherwise here&#39;s a default</span>
-  )
-  
-  <span style="color:#75715e"># Output details tag</span>
-  glue<span style="color:#f92672">::</span><span style="color:#a6e22e">glue</span>(
-    <span style="color:#e6db74">&#34;&lt;details&gt;
-</span><span style="color:#e6db74">      &lt;summary&gt;{summary_text}&lt;/summary&gt;
-</span><span style="color:#e6db74">      {source_orig}
-</span><span style="color:#e6db74">    &lt;/details&gt;&#34;</span>
-  )
-})
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">mydir <span style="color:#f92672">&lt;-</span> <span style="color:#e6db74">&#34;C:/Users/Hamdi/Desktop&#34;</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">mydir <span style="color:#f92672">&lt;-</span> <span style="color:#e6db74">&#34;C:/Users/Hamdi/Desktop&#34;</span>
 
 volatile2 <span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">read_excel</span>(<span style="color:#e6db74">&#34;volatility2.xlsx&#34;</span>)
 
@@ -373,20 +348,20 @@ utils<span style="color:#f92672">::</span><span style="color:#a6e22e">browseURL<
 <p>This volatile behaviour can be explained by how optimistic firms are about the future and investment decisions being optional. You need to buy food and pay for shelter regularly to sustain yourself but you don’t need to buy a new machinery for your business or learn a certain skill if you think it’s going to be worthless to you. Even if you plan to invest, future outcomes are uncertain. With the gains of investment being realised in the long term, it’s not a surprise that investment activity is sensitive to this uncertainty.</p>
 <h3 id="whats-happening-with-business-investment"><strong>What&rsquo;s happening with business investment?</strong></h3>
 <p>Both Gross and Net (which takes into account depreciation) investment as a share of GDP reached 14.6% and 4.8% respectively at the peak of the 90s boom. Since then, both are yet to reach similar numbers with average gross and net investment since 2000 being 12.7% and 2.6% respectively. Gross investment has been sluggish in this period but net investment has had a downward trend.</p>
-<p><img src="/post/2019-06-14-investment_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<p><img src="/post/2019-06-14-investment_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
 <p>However, these are nominal ratios, which means any price effects aren’t striped out. Over the decades, we&rsquo;ve seen Moore’s law in <a href="https://en.wikipedia.org/wiki/Moore%27s_law" target="_blank">action</a>, where the number of components packed into a computer chip has doubled every 2 years or so. This has meant new computers and other technologies have doubled in speed and have become more powerful at lower <a href="https://www.washingtonpost.com/opinions/the-power-of-moores-law/2015/04/19/f1806c98-e6b6-11e4-9a6a-c1ab95a0600b_story.html?utm_term=.67a8c53ba071" target="_blank">costs</a>. In the 1970s, supercomputers were bulky, stationary things which used up a lot of power. Supercomputers can now be found in our pockets.</p>
 <p>Why does this matter? Because most of investment is being spent on things which have benefitted from this reduction in costs.</p>
 <p>While investment in equipment makes up the bulk of total investment, investment in intellectual products, which include software and research and development, is making up a growing portion of total investment. Also, the bulk of investment in equipment is being driven by information processing equipment, which includes computers and communication equipment.</p>
+<p><img src="/post/2019-06-14-investment_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
 <p><img src="/post/2019-06-14-investment_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
-<p><img src="/post/2019-06-14-investment_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
 <p>It therefore makes sense to look at the real ratios of investment to gdp to see if the nominal figure was just capturing falling costs. I use log ratios to avoid misinterpreting chained dollar ratios as this article <a href="http://econbrowser.com/archives/2018/03/assessing-trends-in-real-shares" target="_blank">explains</a>. I then use the log ratio and express it relative to a base year value (1967 in my case) as explained <a href="http://econbrowser.com/archives/2015/08/to-log-or-not-to-log-part-iii" target="_blank">here</a>, to get the cumulative percentage changes. A percentage shows a part of the whole. Meanwhile, a cumulative percentage is derived from adding a percentage from one period to a percentage from the next period which will help us see if the part (Gross and Net Investment) of the whole (GDP), have become more or less important over the years.</p>
 <p>If this ratio falls below 0, then the real investment growth has cumulatively fallen short of cumulative real GDP growth. We see this happen frequently with net investment but not with gross investment. However, both gross and net investment have grown cumulatively relative to GDP since 1967, growing at 73% and 23% respectively.</p>
-<p><img src="/post/2019-06-14-investment_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+<p><img src="/post/2019-06-14-investment_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
 <p>There&rsquo;s been a growing gap between the gross and net cumulative growth rates since the early 2000s. In fact, if we change the starting point to this period, we find that net investment has cumulatively fallen short of cumulative GDP growth.</p>
-<p><img src="/post/2019-06-14-investment_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+<p><img src="/post/2019-06-14-investment_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
 <p>If we then look at net investment as a share of gross investment, we discover that it’s been falling steadily in nominal and real terms.</p>
+<p><img src="/post/2019-06-14-investment_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
 <p><img src="/post/2019-06-14-investment_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
-<p><img src="/post/2019-06-14-investment_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
 <p>This suggests a greater amount of investment is being devoted to replacing older capital stock instead of adding to stock. What could explain this?</p>
 <h3 id="fool-me-once"><strong>Fool me once</strong></h3>
 <p>Firms who invest are not capturing most of the benefits. This is a point raised by William Nordhaus who finds profits from innovation are <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=820309" target="_blank">small</a>. Why? Nordhaus says most of the innovation happening in the new economy — software, telecommunications, and similar industries — are marked by easy entrance and exit. These industries are also characterised by rapid technological change. What is usually valuable in these industries is the information or know-how created from these innovations and as Nordhaus says,</p>

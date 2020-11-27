@@ -35,33 +35,7 @@ Investment helps raise an economy’s capital stock, which is another way of say
 
 As a component of GDP, measuring investment helps us to measure an economy’s output. It’s the most volatile component as the animation below shows — it rises and falls by larger amounts.
 
-```r
-knitr::knit_hooks$set(source = function(x, options) {
 
-  # The original source in a fenced code block
-  source_orig <- paste(c("```r", x, "```"), collapse = "\n")
-  fold_option <- options[["code_fold"]]
-
-  # If option not set or explicitly FALSE, return regular code chunk
-  if (is.null(fold_option) | isFALSE(fold_option)) {
-   return(source_orig) 
-  } 
-  
-  summary_text <- ifelse(
-    is.character(fold_option), # If the option is text,
-    fold_option,               # use it as <summary>Label</summary>,
-    "Click to expand"          # otherwise here's a default
-  )
-  
-  # Output details tag
-  glue::glue(
-    "<details>
-      <summary>{summary_text}</summary>
-      {source_orig}
-    </details>"
-  )
-})
-```
 
 ```r
 mydir <- "C:/Users/Hamdi/Desktop"
@@ -171,7 +145,7 @@ Both Gross and Net (which takes into account depreciation) investment as a share
 
 
 
-<img src="/post/2019-06-14-investment_files/figure-html/unnamed-chunk-5-1.png" width="672" />
+<img src="/post/2019-06-14-investment_files/figure-html/unnamed-chunk-4-1.png" width="672" />
 
 However, these are nominal ratios, which means any price effects aren’t striped out. Over the decades, we've seen Moore’s law in <a href="https://en.wikipedia.org/wiki/Moore%27s_law" target="_blank">action</a>, where the number of components packed into a computer chip has doubled every 2 years or so. This has meant new computers and other technologies have doubled in speed and have become more powerful at lower <a href="https://www.washingtonpost.com/opinions/the-power-of-moores-law/2015/04/19/f1806c98-e6b6-11e4-9a6a-c1ab95a0600b_story.html?utm_term=.67a8c53ba071" target="_blank">costs</a>. In the 1970s, supercomputers were bulky, stationary things which used up a lot of power. Supercomputers can now be found in our pockets.
 
@@ -182,9 +156,9 @@ While investment in equipment makes up the bulk of total investment, investment 
 
 
 
-<img src="/post/2019-06-14-investment_files/figure-html/unnamed-chunk-7-1.png" width="672" />
+<img src="/post/2019-06-14-investment_files/figure-html/unnamed-chunk-6-1.png" width="672" />
 
-<img src="/post/2019-06-14-investment_files/figure-html/unnamed-chunk-8-1.png" width="672" />
+<img src="/post/2019-06-14-investment_files/figure-html/unnamed-chunk-7-1.png" width="672" />
 
 
 It therefore makes sense to look at the real ratios of investment to gdp to see if the nominal figure was just capturing falling costs. I use log ratios to avoid misinterpreting chained dollar ratios as this article <a href="http://econbrowser.com/archives/2018/03/assessing-trends-in-real-shares" target="_blank">explains</a>. I then use the log ratio and express it relative to a base year value (1967 in my case) as explained <a href="http://econbrowser.com/archives/2015/08/to-log-or-not-to-log-part-iii" target="_blank">here</a>, to get the cumulative percentage changes. A percentage shows a part of the whole. Meanwhile, a cumulative percentage is derived from adding a percentage from one period to a percentage from the next period which will help us see if the part (Gross and Net Investment) of the whole (GDP), have become more or less important over the years. 
@@ -195,7 +169,7 @@ If this ratio falls below 0, then the real investment growth has cumulatively fa
 
 
 
-<img src="/post/2019-06-14-investment_files/figure-html/unnamed-chunk-10-1.png" width="672" />
+<img src="/post/2019-06-14-investment_files/figure-html/unnamed-chunk-9-1.png" width="672" />
 
 There's been a growing gap between the gross and net cumulative growth rates since the early 2000s. In fact, if we change the starting point to this period, we find that net investment has cumulatively fallen short of cumulative GDP growth.
 
@@ -203,7 +177,7 @@ There's been a growing gap between the gross and net cumulative growth rates sin
 
 
 
-<img src="/post/2019-06-14-investment_files/figure-html/unnamed-chunk-12-1.png" width="672" />
+<img src="/post/2019-06-14-investment_files/figure-html/unnamed-chunk-11-1.png" width="672" />
 
 If we then look at net investment as a share of gross investment, we discover that it’s been falling steadily in nominal and real terms.
 
@@ -211,9 +185,9 @@ If we then look at net investment as a share of gross investment, we discover th
 
 
 
-<img src="/post/2019-06-14-investment_files/figure-html/unnamed-chunk-14-1.png" width="672" />
+<img src="/post/2019-06-14-investment_files/figure-html/unnamed-chunk-13-1.png" width="672" />
 
-<img src="/post/2019-06-14-investment_files/figure-html/unnamed-chunk-15-1.png" width="672" />
+<img src="/post/2019-06-14-investment_files/figure-html/unnamed-chunk-14-1.png" width="672" />
 
 This suggests a greater amount of investment is being devoted to replacing older capital stock instead of adding to stock. What could explain this?
 
