@@ -1,6 +1,9 @@
 ---
 title: Investment
 author: Hamdi Ahmed
+output:
+  html_document:
+    code_folding: hide
 date: '2019-06-14'
 slug: investment
 categories: []
