@@ -1,6 +1,7 @@
 ---
 title: Investment
 author: Hamdi Ahmed
+output: html_document
 date: '2019-06-14'
 slug: investment
 categories: []
@@ -54,36 +55,26 @@ As a component of GDP, measuring investment helps us to measure an economy’s o
 
 ```{r setup, include = FALSE}
 
-knitr::knit_hooks$set(source = function(x, options) {
 
-  # The original source in a fenced code block
-  source_orig <- paste(c("```r", x, "```"), collapse = "\n")
-  fold_option <- options[["code_fold"]]
-
-  # If option not set or explicitly FALSE, return regular code chunk
-  if (is.null(fold_option) | isFALSE(fold_option)) {
-   return(source_orig) 
-  } 
-  
-  summary_text <- ifelse(
-    is.character(fold_option), # If the option is text,
-    fold_option,               # use it as <summary>Label</summary>,
-    "Click to expand"          # otherwise here's a default
-  )
-  
-  # Output details tag
-  glue::glue(
-    "<details>
-      <summary>{summary_text}</summary>
-      {source_orig}
-    </details>"
-  )
-})
-
-
-
-
-
+hooks = knitr::knit_hooks$get()
+hook_foldable = function(type) {
+  force(type)
+  function(x, options) {
+    res = hooks[[type]](x, options)
+    
+    if (isFALSE(options[[paste0("fold.", type)]])) return(res)
+    
+    paste0(
+      "<details><summary>", type, "</summary>\n\n",
+      res,
+      "\n\n</details>"
+    )
+  }
+}
+knitr::knit_hooks$set(
+  output = hook_foldable("output"),
+  plot = hook_foldable("plot")
+)
 
 
 ```
