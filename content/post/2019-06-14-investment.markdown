@@ -35,7 +35,6 @@ Investment helps raise an economy’s capital stock, which is another way of say
 
 As a component of GDP, measuring investment helps us to measure an economy’s output. It’s the most volatile component as the animation below shows — it rises and falls by larger amounts.
 
-
 ```r
 knitr::knit_hooks$set(source = function(x, options) {
 
@@ -63,7 +62,6 @@ knitr::knit_hooks$set(source = function(x, options) {
   )
 })
 ```
-
 
 ```r
 mydir <- "C:/Users/Hamdi/Desktop"
