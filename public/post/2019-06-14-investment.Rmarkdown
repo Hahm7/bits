@@ -1,9 +1,6 @@
 ---
 title: Investment
 author: Hamdi Ahmed
-output:
-  html_document:
-    code_folding: hide
 date: '2019-06-14'
 slug: investment
 categories: []
@@ -55,19 +52,33 @@ Investment helps raise an economy’s capital stock, which is another way of say
 
 As a component of GDP, measuring investment helps us to measure an economy’s output. It’s the most volatile component as the animation below shows — it rises and falls by larger amounts.
 
-```{r setup, include=FALSE}
+```{r setup, include = FALSE}
 
-knitr::knit_hooks$set(
-  summary = function(before, options, envir) {
-  if (length(options$summary)) {
-    if (before) {
-      return(sprintf("<details><summary>Code: %s</summary>\n", options$summary))
-    } else {
-      return("\n</details>")
-    }
-  }
-}
-)
+knitr::knit_hooks$set(source = function(x, options) {
+
+  # The original source in a fenced code block
+  source_orig <- paste(c("```r", x, "```"), collapse = "\n")
+  fold_option <- options[["code_fold"]]
+
+  # If option not set or explicitly FALSE, return regular code chunk
+  if (is.null(fold_option) | isFALSE(fold_option)) {
+   return(source_orig) 
+  } 
+  
+  summary_text <- ifelse(
+    is.character(fold_option), # If the option is text,
+    fold_option,               # use it as <summary>Label</summary>,
+    "Click to expand"          # otherwise here's a default
+  )
+  
+  # Output details tag
+  glue::glue(
+    "<details>
+      <summary>{summary_text}</summary>
+      {source_orig}
+    </details>"
+  )
+})
 
 
 

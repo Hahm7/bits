@@ -1,9 +1,6 @@
 ---
 title: Investment
 author: Hamdi Ahmed
-output:
-  html_document:
-    code_folding: hide
 date: '2019-06-14'
 slug: investment
 categories: []
@@ -34,7 +31,6 @@ Investment is what allows me to write this post on a laptop instead on pen and p
 Investment helps raise an economy’s capital stock, which is another way of saying it increases the number of tools we can work with. These new tools and technologies make an impact on our productivity — how much we’re able to get done with the same amount of inputs. This includes investment in education where knowing more allows us to do more or do things in a better way.
 
 As a component of GDP, measuring investment helps us to measure an economy’s output. It’s the most volatile component as the animation below shows — it rises and falls by larger amounts.
-
 
 
 
