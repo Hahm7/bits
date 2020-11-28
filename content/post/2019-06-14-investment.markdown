@@ -143,7 +143,7 @@ This volatile behaviour can be explained by how optimistic firms are about the f
 Both Gross and Net (which takes into account depreciation) investment as a share of GDP reached 14.6% and 4.8% respectively at the peak of the 90s boom. Since then, both are yet to reach similar numbers with average gross and net investment since 2000 being 12.7% and 2.6% respectively. Gross investment has been sluggish in this period but net investment has had a downward trend.
 
 <details>
-<summary>Test</summary)
+<summary>Test</summary>
 
 </details>
 <img src="/post/2019-06-14-investment_files/figure-html/unnamed-chunk-4-1.png" width="672" />
