@@ -36,6 +36,9 @@ Investment helps raise an economy’s capital stock, which is another way of say
 As a component of GDP, measuring investment helps us to measure an economy’s output. It’s the most volatile component as the animation below shows — it rises and falls by larger amounts.
 
 
+
+![](/images/volatile3.gif) 
+
 <details>
 <summary>Click here for the graph code</summary>
 <p>
@@ -137,7 +140,6 @@ utils::browseURL(gif_file)
 </p>
 </details>
 
-![](/images/volatile3.gif) 
 
 
 This volatile behaviour can be explained by how optimistic firms are about the future and investment decisions being optional. You need to buy food and pay for shelter regularly to sustain yourself but you don’t need to buy a new machinery for your business or learn a certain skill if you think it’s going to be worthless to you. Even if you plan to invest, future outcomes are uncertain. With the gains of investment being realised in the long term, it’s not a surprise that investment activity is sensitive to this uncertainty.
