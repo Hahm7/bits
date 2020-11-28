@@ -13,6 +13,8 @@ excerpt: ~
 
 
 
+
+
 Imagine we find a habitable planet next to our nearest star which wasn’t the sun. That would be Proxima Centauri and it is approximately 4.2 light years away from us. 
 
 **What follows next is a gross oversimplification of space travel.**
@@ -32,7 +34,6 @@ Investment is what allows me to write this post on a laptop instead on pen and p
 Investment helps raise an economy’s capital stock, which is another way of saying it increases the number of tools we can work with. These new tools and technologies make an impact on our productivity — how much we’re able to get done with the same amount of inputs. This includes investment in education where knowing more allows us to do more or do things in a better way.
 
 As a component of GDP, measuring investment helps us to measure an economy’s output. It’s the most volatile component as the animation below shows — it rises and falls by larger amounts.
-
 
 
 
@@ -141,14 +142,11 @@ This volatile behaviour can be explained by how optimistic firms are about the f
 
 Both Gross and Net (which takes into account depreciation) investment as a share of GDP reached 14.6% and 4.8% respectively at the peak of the 90s boom. Since then, both are yet to reach similar numbers with average gross and net investment since 2000 being 12.7% and 2.6% respectively. Gross investment has been sluggish in this period but net investment has had a downward trend.
 
-
-
-
-<details><summary>plot</summary>
-
-<img src="/post/2019-06-14-investment_files/figure-html/unnamed-chunk-4-1.png" width="672" />
+<details>
+<summary>Test</summary)
 
 </details>
+<img src="/post/2019-06-14-investment_files/figure-html/unnamed-chunk-4-1.png" width="672" />
 
 However, these are nominal ratios, which means any price effects aren’t striped out. Over the decades, we've seen Moore’s law in <a href="https://en.wikipedia.org/wiki/Moore%27s_law" target="_blank">action</a>, where the number of components packed into a computer chip has doubled every 2 years or so. This has meant new computers and other technologies have doubled in speed and have become more powerful at lower <a href="https://www.washingtonpost.com/opinions/the-power-of-moores-law/2015/04/19/f1806c98-e6b6-11e4-9a6a-c1ab95a0600b_story.html?utm_term=.67a8c53ba071" target="_blank">costs</a>. In the 1970s, supercomputers were bulky, stationary things which used up a lot of power. Supercomputers can now be found in our pockets.
 
@@ -159,17 +157,9 @@ While investment in equipment makes up the bulk of total investment, investment 
 
 
 
-<details><summary>plot</summary>
-
 <img src="/post/2019-06-14-investment_files/figure-html/unnamed-chunk-6-1.png" width="672" />
 
-</details>
-
-<details><summary>plot</summary>
-
 <img src="/post/2019-06-14-investment_files/figure-html/unnamed-chunk-7-1.png" width="672" />
-
-</details>
 
 
 It therefore makes sense to look at the real ratios of investment to gdp to see if the nominal figure was just capturing falling costs. I use log ratios to avoid misinterpreting chained dollar ratios as this article <a href="http://econbrowser.com/archives/2018/03/assessing-trends-in-real-shares" target="_blank">explains</a>. I then use the log ratio and express it relative to a base year value (1967 in my case) as explained <a href="http://econbrowser.com/archives/2015/08/to-log-or-not-to-log-part-iii" target="_blank">here</a>, to get the cumulative percentage changes. A percentage shows a part of the whole. Meanwhile, a cumulative percentage is derived from adding a percentage from one period to a percentage from the next period which will help us see if the part (Gross and Net Investment) of the whole (GDP), have become more or less important over the years. 
@@ -180,11 +170,7 @@ If this ratio falls below 0, then the real investment growth has cumulatively fa
 
 
 
-<details><summary>plot</summary>
-
 <img src="/post/2019-06-14-investment_files/figure-html/unnamed-chunk-9-1.png" width="672" />
-
-</details>
 
 There's been a growing gap between the gross and net cumulative growth rates since the early 2000s. In fact, if we change the starting point to this period, we find that net investment has cumulatively fallen short of cumulative GDP growth.
 
@@ -192,11 +178,7 @@ There's been a growing gap between the gross and net cumulative growth rates sin
 
 
 
-<details><summary>plot</summary>
-
 <img src="/post/2019-06-14-investment_files/figure-html/unnamed-chunk-11-1.png" width="672" />
-
-</details>
 
 If we then look at net investment as a share of gross investment, we discover that it’s been falling steadily in nominal and real terms.
 
@@ -204,17 +186,9 @@ If we then look at net investment as a share of gross investment, we discover th
 
 
 
-<details><summary>plot</summary>
-
 <img src="/post/2019-06-14-investment_files/figure-html/unnamed-chunk-13-1.png" width="672" />
 
-</details>
-
-<details><summary>plot</summary>
-
 <img src="/post/2019-06-14-investment_files/figure-html/unnamed-chunk-14-1.png" width="672" />
-
-</details>
 
 This suggests a greater amount of investment is being devoted to replacing older capital stock instead of adding to stock. What could explain this?
 
