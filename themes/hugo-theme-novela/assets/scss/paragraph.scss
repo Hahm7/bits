@@ -15,6 +15,11 @@ p b {
     font-weight: 800;
 }
 
+summary{
+    width: 100%;
+    max-width: 680px;
+}
+
 /*DESKTOP*/
 @media screen and (max-width: 1070px){
     p{
