@@ -36,7 +36,8 @@ Investment helps raise an economy’s capital stock, which is another way of say
 As a component of GDP, measuring investment helps us to measure an economy’s output. It’s the most volatile component as the animation below shows — it rises and falls by larger amounts.
 
 
-
+<details>
+<summary>Test</summary>
 ```r
 mydir <- "C:/Users/Hamdi/Desktop"
 
@@ -131,7 +132,7 @@ gif_file <- save_gif({for (i in seq(1,M)){
 }, gif_file = paste0(mydir,"/volatile3.gif"), width = 1200, height = 800, res = 144, delay=1/10)
 utils::browseURL(gif_file)
 ```
-
+</details>
 
 ![](/images/volatile3.gif) 
 
@@ -142,10 +143,9 @@ This volatile behaviour can be explained by how optimistic firms are about the f
 
 Both Gross and Net (which takes into account depreciation) investment as a share of GDP reached 14.6% and 4.8% respectively at the peak of the 90s boom. Since then, both are yet to reach similar numbers with average gross and net investment since 2000 being 12.7% and 2.6% respectively. Gross investment has been sluggish in this period but net investment has had a downward trend.
 
-<details>
-<summary>Test</summary>
 
-</details>
+
+
 <img src="/post/2019-06-14-investment_files/figure-html/unnamed-chunk-4-1.png" width="672" />
 
 However, these are nominal ratios, which means any price effects aren’t striped out. Over the decades, we've seen Moore’s law in <a href="https://en.wikipedia.org/wiki/Moore%27s_law" target="_blank">action</a>, where the number of components packed into a computer chip has doubled every 2 years or so. This has meant new computers and other technologies have doubled in speed and have become more powerful at lower <a href="https://www.washingtonpost.com/opinions/the-power-of-moores-law/2015/04/19/f1806c98-e6b6-11e4-9a6a-c1ab95a0600b_story.html?utm_term=.67a8c53ba071" target="_blank">costs</a>. In the 1970s, supercomputers were bulky, stationary things which used up a lot of power. Supercomputers can now be found in our pockets.
