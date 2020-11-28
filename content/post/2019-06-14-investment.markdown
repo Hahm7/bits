@@ -146,7 +146,7 @@ Both Gross and Net (which takes into account depreciation) investment as a share
 
 <details><summary>plot</summary>
 
-<img src="/post/2019-06-14-investment_files/figure-html/unnamed-chunk-5-1.png" width="672" />
+<img src="/post/2019-06-14-investment_files/figure-html/unnamed-chunk-4-1.png" width="672" />
 
 </details>
 
@@ -161,13 +161,13 @@ While investment in equipment makes up the bulk of total investment, investment 
 
 <details><summary>plot</summary>
 
-<img src="/post/2019-06-14-investment_files/figure-html/unnamed-chunk-7-1.png" width="672" />
+<img src="/post/2019-06-14-investment_files/figure-html/unnamed-chunk-6-1.png" width="672" />
 
 </details>
 
 <details><summary>plot</summary>
 
-<img src="/post/2019-06-14-investment_files/figure-html/unnamed-chunk-8-1.png" width="672" />
+<img src="/post/2019-06-14-investment_files/figure-html/unnamed-chunk-7-1.png" width="672" />
 
 </details>
 
@@ -182,7 +182,7 @@ If this ratio falls below 0, then the real investment growth has cumulatively fa
 
 <details><summary>plot</summary>
 
-<img src="/post/2019-06-14-investment_files/figure-html/unnamed-chunk-10-1.png" width="672" />
+<img src="/post/2019-06-14-investment_files/figure-html/unnamed-chunk-9-1.png" width="672" />
 
 </details>
 
@@ -194,7 +194,7 @@ There's been a growing gap between the gross and net cumulative growth rates sin
 
 <details><summary>plot</summary>
 
-<img src="/post/2019-06-14-investment_files/figure-html/unnamed-chunk-12-1.png" width="672" />
+<img src="/post/2019-06-14-investment_files/figure-html/unnamed-chunk-11-1.png" width="672" />
 
 </details>
 
@@ -206,13 +206,13 @@ If we then look at net investment as a share of gross investment, we discover th
 
 <details><summary>plot</summary>
 
-<img src="/post/2019-06-14-investment_files/figure-html/unnamed-chunk-14-1.png" width="672" />
+<img src="/post/2019-06-14-investment_files/figure-html/unnamed-chunk-13-1.png" width="672" />
 
 </details>
 
 <details><summary>plot</summary>
 
-<img src="/post/2019-06-14-investment_files/figure-html/unnamed-chunk-15-1.png" width="672" />
+<img src="/post/2019-06-14-investment_files/figure-html/unnamed-chunk-14-1.png" width="672" />
 
 </details>
 
