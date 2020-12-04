@@ -21,6 +21,6 @@ author = "authors"
 [markup.goldmark.renderer]
 unsafe= true
 
-[[Page.Title]]
+[[Title]]
 name = "Test"
 
