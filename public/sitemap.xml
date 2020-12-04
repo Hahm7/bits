@@ -48,19 +48,15 @@
   </url>
   
   <url>
+    <loc>/index.html</loc>
+  </url>
+  
+  <url>
     <loc>/about/</loc>
   </url>
   
   <url>
     <loc>/authors/hugo-authors/</loc>
-  </url>
-  
-  <url>
-    <loc>/authors/</loc>
-  </url>
-  
-  <url>
-    <loc>/hamdi-ahmed/</loc>
   </url>
   
 </urlset>
