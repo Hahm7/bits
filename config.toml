@@ -1,7 +1,7 @@
 theme = "hugo-theme-novela"
 baseURL = ""
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "test"
 
 # Novela settings
 
