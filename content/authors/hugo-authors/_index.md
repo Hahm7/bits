@@ -5,6 +5,6 @@ bio: |
 featured: true
 social:
 - title: twitter
-  url: https://https://twitter.com/hhamdiahmed
+  url: https://twitter.com/hhamdiahmed
 title: Author
 ---
