@@ -10,15 +10,10 @@ title = "Bits & Thoughts"
 paginate = 6
 
 [social]
-twitter= "https://twitter.com/forestryio"
-github= "https://github.com/forestryio/novela-hugo-starter"
-linkedin= "https://www.linkedin.com/company/forestry.io"
-instagram = "#"
-dribbble = "#"
-youtube = "#"
+twitter= "https://https://twitter.com/hhamdiahmed"
 
 [taxonomies]
-author = "authors"
+author = "Hamdi Ahmed"
 
 [markup.goldmark.renderer]
 unsafe= true
