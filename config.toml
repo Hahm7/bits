@@ -3,6 +3,7 @@ baseURL = ""
 languageCode = "en-us"
 title = "Bits & Thoughts"
 
+
 # Novela settings
 
 paginate = 6
@@ -21,6 +22,8 @@ author = "authors"
 [markup.goldmark.renderer]
 unsafe= true
 
-[Title]
-name = "Test"
+[hero]
+heading = "Test"
+
+
 
