@@ -21,3 +21,6 @@ author = "authors"
 [markup.goldmark.renderer]
 unsafe= true
 
+[params]
+title = "Test"
+
