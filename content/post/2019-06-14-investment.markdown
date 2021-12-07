@@ -29,6 +29,8 @@ These are the kind of issues which exist for companies making investment decisio
 
 ### **Why is investment important?**
 
+testing text
+
 Investment is what allows me to write this post on a laptop instead on pen and paper. It’s what allows me to research this topic on the internet instead of sifting through a mountain of books. It’s also what allows you to read this post anywhere without carrying around pieces of paper. Somewhere, sometime ago, someone thought about these new ways of doing things and an investment was made to turn these new methods of doing, into products.
 
 Investment helps raise an economy’s capital stock, which is another way of saying it increases the number of tools we can work with. These new tools and technologies make an impact on our productivity — how much we’re able to get done with the same amount of inputs. This includes investment in education where knowing more allows us to do more or do things in a better way.

@@ -5,6 +5,10 @@
     <link>/authors/</link>
     <description>Recent content in Authors on Bits &amp; Thoughts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    
+	<atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
+    
+    
   </channel>
 </rss>
