@@ -20,6 +20,9 @@ Imagine we find a habitable planet next to our nearest star which wasn’t the s
 **What follows next is a gross oversimplification of space travel.**
 
 
+uygygyguyguyguyg
+
+
 If we assume that we could travel through space at a speed of 56,000 km/h, it would take 81,000 years to reach the planet. We of course decide to colonise it but we can’t live for 81,000 years — the current world average life expectancy is 70.5 years. So, let’s assume our next best idea is to go there by using a generational ship. Those aboard will live and die on the ship, giving birth to the next generation along the way until the last generation reaches the planet. 
 
 Would we do it? 
@@ -39,7 +42,7 @@ As a component of GDP, measuring investment helps us to measure an economy’s o
 
 
 
-![](/images/volatile3.gif) 
+![](/img/volatile3.gif) 
 
 <details>
 <summary>Click here for the graph code</summary>
