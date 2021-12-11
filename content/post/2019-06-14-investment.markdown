@@ -19,6 +19,7 @@ Imagine we find a habitable planet next to our nearest star which wasn’t the s
 
 **What follows next is a gross oversimplification of space travel.**
 
+
 If we assume that we could travel through space at a speed of 56,000 km/h, it would take 81,000 years to reach the planet. We of course decide to colonise it but we can’t live for 81,000 years — the current world average life expectancy is 70.5 years. So, let’s assume our next best idea is to go there by using a generational ship. Those aboard will live and die on the ship, giving birth to the next generation along the way until the last generation reaches the planet. 
 
 Would we do it? 
@@ -28,6 +29,7 @@ Would we do it?
 These are the kind of issues which exist for companies making investment decisions. Because it takes time for the benefits of investment to show, it can be rendered useless by better, cheaper technology. Could this sort of thinking be discouraging businesses from making investments?
 
 ### **Why is investment important?**
+
 
 Investment is what allows me to write this post on a laptop instead on pen and paper. It’s what allows me to research this topic on the internet instead of sifting through a mountain of books. It’s also what allows you to read this post anywhere without carrying around pieces of paper. Somewhere, sometime ago, someone thought about these new ways of doing things and an investment was made to turn these new methods of doing, into products.
 
