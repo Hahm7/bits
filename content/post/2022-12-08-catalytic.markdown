@@ -9,4 +9,4 @@ hero: /images/hero-3.jpg
 excerpt: ~
 ---
 
-It seems like every time I check the nextdoor website, there’s a new post about a catalytic converter theft. There would often be footage from security cameras accompanying these posts showing just how well coordinated the thefts are - robbers seem to work in teams of 3 or 4, each with a designated role. With the number of high street banks dwindling [link], have cars replaced them?
+It seems like every time I check the nextdoor website, there’s a new post about a catalytic converter theft. There would often be footage from security cameras accompanying these posts showing just how well coordinated the thefts are - robbers seem to work in teams of 3 or 4, each with a designated role. With the number of high street banks <a href="https://www.moneysavingexpert.com/news/2021/12/bank-branch-access-has-shrunk-by-up-to-50--since-2015---but-if-y/" target="_blank">shrinking</a>, have cars replaced them?
