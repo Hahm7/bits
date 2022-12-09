@@ -13,4 +13,8 @@ It seems like every time I check the nextdoor website, there’s a new post abou
 
 ### **Why is investment important?**
 
-![](https://www.youtube.com/watch?v=qybMIkySaXk)
+``` r
+blogdown::shortcode("youtube", "qybMIkySaXk")
+```
+
+{{% youtube "qybMIkySaXk" %}}
