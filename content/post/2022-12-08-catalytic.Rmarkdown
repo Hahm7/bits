@@ -17,7 +17,7 @@ library(vembedr)
 
 It seems like every time I check the nextdoor website, there’s a new post about a catalytic converter theft. There would often be footage from security cameras accompanying these posts showing just how well coordinated the thefts are - robbers seem to work in teams of 3 or 4, each with a designated role. 
 
-```{r, eval=FALSE}
+```{r echo=FALSE, eval=TRUE}
 blogdown::shortcode("youtube", "qybMIkySaXk")
 ```
 
