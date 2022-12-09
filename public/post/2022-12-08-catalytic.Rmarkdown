@@ -19,6 +19,6 @@ It seems like every time I check the nextdoor website, there’s a new post abou
 
 ### **Why is investment important?**
 
-```{r, eval=TRUE}
-embed_url("https://www.youtube.com/watch?v=qybMIkySaXk")
+```{r, eval=FALSE}
+blogdown::shortcode("youtube", "qybMIkySaXk")
 ```
