@@ -1,0 +1,340 @@
+---
+title: Curious Case of Catalytic Converters
+author: ''
+output: html_document
+date: '2022-12-12'
+slug: []
+categories: []
+tags: []
+hero: /images/convert.jpg
+excerpt: ~
+---
+```{r setup, include = FALSE}
+
+
+knitr::knit_hooks$set(source = function(x, options) {
+
+  # The original source in a fenced code block
+  source_orig <- paste(c("```r", x, "```"), collapse = "\n")
+  fold_option <- options[["code_fold"]]
+
+  # If option not set or explicitly FALSE, return regular code chunk
+  if (is.null(fold_option) | isFALSE(fold_option)) {
+   return(source_orig) 
+  } 
+  
+  summary_text <- ifelse(
+    is.character(fold_option), # If the option is text,
+    fold_option,               # use it as <summary>Label</summary>,
+    "Click to expand"          # otherwise here's a default
+  )
+  
+  # Output details tag
+  glue::glue(
+    "<details>
+      <summary>{summary_text}</summary>
+      {source_orig}
+    </details>"
+  )
+})
+
+
+```
+
+
+
+
+``` {r warning = FALSE, message = FALSE, echo = FALSE}
+library(blogdown)
+library(vembedr)
+library(reticulate)
+library(scales)
+
+
+
+library(dplyr)
+library(plotly)
+library(tidyverse)
+library(readxl)
+library(lubridate)
+library(shiny)
+library(devtools)
+library(gifski)
+library(data.table)
+library(stringr)
+library(ggplot2)
+library(ggthemr)
+library(tibble)
+library(janitor)
+library(scales)
+library(directlabels)
+library(cowplot)
+library(readxl)
+library(gridExtra)  
+
+
+```
+
+It seems like every time I check the nextdoor <a href="https://nextdoor.co.uk/">website</a>, there’s a new post about a catalytic converter theft. There would often be footage from security cameras accompanying these posts showing just how well coordinated the thefts are - robbers seem to work in teams of 3 or 4, each with a designated role. 
+
+```{r echo=FALSE, out.extra = 'style="margin:60px auto;"'}
+blogdown::shortcode("youtube", "qybMIkySaXk")
+
+```
+
+With the number of high street banks <a href="https://www.moneysavingexpert.com/news/2021/12/bank-branch-access-has-shrunk-by-up-to-50--since-2015---but-if-y/" target="_blank">shrinking</a>, it's starting to feel like cars have become the more attractive item to rob.
+
+### **Is this actually an increasing occurrence?**
+
+To answer this, I used a python script found <a href="https://github.com/chanwooh/Nextdoor-Script" target="_blank">here</a> and modified it to search the nextdoor website for posts mentioning 'catalytic thefts' and scraped the result into a CSV file.
+
+<details>
+<summary>Click here for modified code</summary>
+<p>
+
+```{python echo = TRUE, eval = FALSE}
+
+from selenium import webdriver
+from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+from selenium.webdriver.common.by import By
+
+from selenium.webdriver.common.keys import Keys
+
+
+from webdriver_manager.chrome import ChromeDriverManager
+from webdriver_manager.core.utils import ChromeType
+
+
+import sys
+import time
+import csv
+
+from lxml import html
+import requests
+import json
+
+from dotenv import load_dotenv
+import os
+
+# Load ability to use .env
+load_dotenv()
+
+# Set up driver options
+capa = DesiredCapabilities.CHROME
+capa["pageLoadStrategy"] = "none"
+
+
+# Set up driver
+
+driver = webdriver.Chrome(ChromeDriverManager().install())
+driver.get("https://nextdoor.co.uk/login/?ucl=1")
+time.sleep(10)
+
+# Accept cookies
+
+driver.find_element(By.XPATH, '//button[text()="Accept All Cookies"]').click()
+
+# Log In
+username = driver.find_element(By.ID, "id_email")
+password = driver.find_element(By.ID, "id_password")
+
+username.send_keys(os.getenv("email")) # Retrieved from .env file
+password.send_keys(os.getenv("password")) # Retrieved from .env file
+driver.find_element("xpath", '//button[@id="signin_button"]').click()
+time.sleep(20) # if not scrolling in time, make this number larger
+
+# search
+
+catalytic = driver.find_element("xpath", "//input[@class='css-1j8137u']")
+catalytic.click()
+
+catalytic.send_keys("catalytic thefts", Keys.ENTER)
+
+# post tab
+
+postings = driver.find_element("xpath", "//a[@data-testid='tab-posts']")
+
+postings.click()
+
+# Use Selenium to scroll 'range' number of times
+# Change the second number in 'range(x, y)' to determine how many times you want it to scroll down.
+for i in range(1, 30):
+	
+	driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+	time.sleep(5)
+
+	# Scroll to top to avoid "Unable to click element" error
+	if (i == 1):
+		driver.execute_script("window.scrollTo(0, 0);")
+		time.sleep(5)
+
+time.sleep(5)
+
+# Scrape the page source returned from Chrome driver for posts
+html_source = driver.page_source
+readable_html = html_source.encode('utf-8')
+tree = html.fromstring(readable_html)
+postNodes = tree.xpath('.//div[@class="css-15luflj"]')
+
+# Iterate over each post node that has an author to get data in an organized fashion
+author_path = './/div[@class="css-77j1dk"]/span/text()'
+location_path = './/div[@class="css-77j1dk"]/span/text()'
+post_content_path = './/div[@class="css-1i0jvqo"]/span/text()'
+
+posts = [(post.xpath(author_path)[0],
+ 		  post.xpath(location_path)[1],
+ 		  post.xpath(post_content_path),
+ 		  post) for post in postNodes if post.xpath(author_path) != []]
+ 		  
+ 		  
+# Create CSV Writer for posts
+ofile  = open('posts.csv', "w")
+writer = csv.writer(ofile, delimiter=',', quotechar='"', quoting=csv.QUOTE_ALL)
+post_counter = 1
+
+
+# Output to csv file
+for post in posts:
+    
+	author = post[0]
+
+
+	location = post[1]
+    
+    
+	content = post[2]
+
+	writer.writerow([author, location, content])
+
+	post_counter += 1
+```
+</p>
+</details>
+
+
+Nextdoor’s search for posts is not the best as irrelevant results would come up such as posts on bicycle thefts and police events. I also had to watch out for posts mentioning normal car thefts and there were no posts prior to 2020 which came up. After cleaning the data, this was the result.
+
+
+
+``` {r echo = FALSE, warning = FALSE, message = FALSE}
+
+posts <- read.csv("posts.csv")
+
+ggthemr("fresh")
+
+darken_swatch(0.2)
+
+ymarg = margin(5,5,0,0)
+
+
+
+myplot <- ggplot(data = posts, aes(x=year, y=comments, group=1)) +
+  geom_line(size=1) +
+  labs(title = "There has been a rise in comments mentioning catalytic converter 
+thefts since 2020 with mentions peaking at the start of each year",
+        subtitle = "Number of nextdoor posts mentioning catalytic thefts",
+          x = "Year and Quarter", y = "Comments",
+          caption = "Source: Nextdoor.co.uk") +
+  scale_y_continuous(limits = c(0, 20)) +
+  theme(axis.title.y=element_blank(),
+        plot.background = element_rect(fill = "#fafafa"),
+        panel.background = element_rect(fill = "#fafafa", colour = "#fafafa"),
+        plot.subtitle = element_text(size = 12))
+
+
+```
+
+
+
+```{r echo = FALSE, fig.align="center"}
+
+myplot
+```
+
+Nextdoor only shows what’s going on in our neighbourhoods but catalytic converter thefts have been increasing all over the <a href="https://goshorty.co.uk/blog/catalytic-converter-thefts/" target="_blank">country</a>.
+
+
+### **What is a catalytic converter?**
+
+A catalytic converter is part of a car’s exhaust system and its purpose is to remove harmful emissions. It is located underneath the car near the engine and since 1993, all petrol cars sold in the uk are legally required to have one. Catalytic converters make use of noble metals, which are resistant to corrosion, to speed up the chemical reaction of converting harmful emissions into less harmful gasses. Some of these metals used, such as platinum and palladium, are also precious metals as they are rare and carry a high economic value. This is why catalytic converters are so lucrative for thieves. <a href="https://www.admiral.com/magazine/news/hybrid-vehicles-targeted-catalytic-converter-thefts" target="_blank">Hybrid</a> cars are prime targets as their converters contain a high concentration of these precious metals. 
+
+
+
+
+``` {r echo = FALSE, warning = FALSE, message = FALSE}
+
+plat <- read_excel("platinum.xlsx")
+
+ggthemr("fresh")
+
+darken_swatch(0.2)
+
+
+
+
+
+myplat <- ggplot(data = plat, aes(x=as.Date(date), y=price, group = 1)) +
+  geom_line(size=1) +
+  labs(title = "The U.S. dollar price per troy ounce of platinum and palladium 
+both rose in the early months of 2021 before falling off later that 
+year",
+        subtitle = "Price of Platinum $/toz",
+          caption = "Source: https://pmm.umicore.com/en/prices/platinum/") +
+  scale_x_date(date_breaks = "4 months", date_labels = "%b%y") +
+  theme(plot.background = element_rect(fill = "#fafafa", colour = NA),
+        panel.background = element_rect(fill = "#fafafa", colour = NA),
+        axis.title.x=element_blank(),
+        axis.title.y=element_blank(),
+        plot.subtitle = element_text(size = 12))
+
+
+
+```
+
+
+
+``` {r echo = FALSE, warning = FALSE, message = FALSE}
+
+plad <- read_excel("palladium.xlsx")
+
+ggthemr("fresh")
+
+darken_swatch(0.2)
+
+
+
+
+
+myplad <- ggplot(data = plad, aes(x=as.Date(date), y=price, group = 1)) +
+  geom_line(size=1) +
+  labs(subtitle = "Price of Paladium $/toz",
+       caption = "https://pmm.umicore.com/en/prices/palladium/") +
+  scale_x_date(date_breaks = "4 months", date_labels = "%b%y") +
+  theme(axis.title.x=element_blank(),
+        axis.title.y=element_blank(),
+        plot.background = element_rect(fill = "#fafafa", colour = NA),
+        panel.background = element_rect(fill = "#fafafa", colour = NA),
+        plot.subtitle = element_text(size = 12))
+        
+
+
+
+```
+
+
+```{r echo = FALSE, fig.align="center"}
+myplat
+
+
+```
+
+
+```{r echo = FALSE, fig.align="center"}
+
+myplad
+
+```
+
+These price movements in 2021 can be explained by global car production <a href="https://www.nytimes.com/2021/04/23/business/auto-semiconductors-general-motors-mercedes.html" target="_blank">failing</a> to keep up with an expected <a href="https://www.reuters.com/business/autos-transportation/increased-new-car-demand-during-pandemic-has-us-industry-optimistic-about-2021-2021-01-05/" target="_blank">increase</a> in demand for cars, where global car production is a large <a href="https://www.edisongroup.com/investment-themes/the-pgm-markets-outlook-and-price-forecasts-2/" target="_blank">source</a> of demand for platinum and palladium. A similar thing happened in 2022 where Russia, the second largest source in the world for platinum and <a href="https://investingnews.com/daily/resource-investing/precious-metals-investing/platinum-investing/top-platinum-palladium-producing-countries/" target="_blank">palladium</a>, is sanctioned in February for its invasion of Ukraine leading to a spike in the prices of the precious <a href="https://www.wsj.com/livecoverage/russia-ukraine-latest-news-2022-04-08/card/palladium-and-platinum-prices-jump-after-london-market-blocks-russia-made-precious-metals-h7Ue50Q9ShLyCi62aHJv" target="_blank">metals</a>. The number of thefts reported on the nextdoor website seem to be following the market price of the precious metals used in catalytic converters. Mentions of the thefts reach new highs after the precious metals spike in price.
+
+There we have it. Those who steal catalytic converters in my neighbourhood seem to be keeping a close eye on the market price of precious metals so they can determine if it’s worth the effort.
