@@ -1,13 +1,7 @@
 theme = "hugo-theme-novela"
-baseURL = ""
+baseURL = "https://hamdiahmed.com"
 languageCode = "en-us"
 title = "Bits & Thoughts"
-
-
-
-# Novela settings
-
-paginate = 6
 
 [social]
 
@@ -15,10 +9,12 @@ paginate = 6
 [taxonomies]
 author = "Hamdi Ahmed"
 
-[markup.goldmark.renderer]
-unsafe= true
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+      
+      
 
-
-
-
+      
 

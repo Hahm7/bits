@@ -38,14 +38,14 @@ As a component of GDP, measuring investment helps us to measure an economy’s o
 
 
 
-![](/img/volatile3.gif) 
+![](/images/volatile10.gif) 
 
 <details>
 <summary>Click here for the graph code</summary>
 <p>
 
 ```r
-mydir <- "C:/Users/Hamdi/Desktop"
+mydir <- "/Users/hamdi/Desktop/"
 
 volatile2 <-read_excel("volatility2.xlsx")
 
@@ -78,7 +78,11 @@ M<-length(xlist)
 
 
 
-ggthemr("flat")
+ggthemr("fresh")
+
+darken_swatch(0.2)
+
+ymarg = margin(5,5,0,0)
 
 volatile.plot<-function(i=1){
   ggplot(data=volatile.dt2[year(date)>1979 & 
@@ -95,13 +99,13 @@ volatile.plot<-function(i=1){
                                   indicator %in% blist],
               hjust=0,nudge_x=30,size=2.5)+
     theme(legend.position="bottom",
+          legend.background = element_rect(fill = "#fafafa", colour = "#fafafa"),
+          legend.key = element_rect(fill = "#fafafa", colour = "#fafafa"),
           legend.title = element_blank(),
-          panel.background = element_rect(fill = 'white'),
-          plot.caption=element_text(hjust=0,size=9),
+          plot.caption=element_text(hjust=0.5,size=9),
+          plot.background = element_rect(fill = "#fafafa", colour = "#fafafa"),
+          panel.background = element_rect(fill = "#fafafa", colour = "#fafafa"),
           legend.text = element_text(colour = "black"),
-          plot.title = element_text(colour = "black"),
-          axis.title.x = element_text(colour = "black"),
-          axis.title.y = element_text(colour = "black"),
           plot.subtitle=element_text(face="italic"))+
     labs(x="",y="",title="Percentage Change from Year Ago",
          caption=mycap1) 
@@ -135,11 +139,13 @@ gif_file <- save_gif({for (i in seq(1,M)){
     print(g)
     print(paste(ii,"out of",20))
   }
-}, gif_file = paste0(mydir,"/volatile3.gif"), width = 1200, height = 800, res = 144, delay=1/10)
+}, gif_file = paste0(mydir,"/volatile10.gif"), width = 1300, height = 800, res = 144, delay=1/10)
 utils::browseURL(gif_file)
 ```
 </p>
 </details>
+
+
 
 
 

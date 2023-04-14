@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bits &amp; Thoughts</title>
-    <link>/</link>
+    <link>https://hamdiahmed.com/</link>
     <description>Recent content on Bits &amp; Thoughts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 12 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 12 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://hamdiahmed.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Curious Case of Catalytic Converters</title>
-      <link>/post/2022-12-12-convert/</link>
+      <link>https://hamdiahmed.com/post/convert/</link>
       <pubDate>Mon, 12 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-12-12-convert/</guid>
+      <guid>https://hamdiahmed.com/post/convert/</guid>
       <description>It seems like every time I check the nextdoor website, there’s a new post about a catalytic converter theft. There would often be footage from security cameras accompanying these posts showing just how well coordinated the thefts are - robbers seem to work in teams of 3 or 4, each with a designated role.
-  With the number of high street banks shrinking, it’s starting to feel like cars have become the more attractive item to rob.</description>
+With the number of high street banks shrinking, it’s starting to feel like cars have become the more attractive item to rob.</description>
     </item>
     
     <item>
       <title>Investment</title>
-      <link>/post/investment/</link>
+      <link>https://hamdiahmed.com/post/investment/</link>
       <pubDate>Fri, 14 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/investment/</guid>
+      <guid>https://hamdiahmed.com/post/investment/</guid>
       <description>Imagine we find a habitable planet next to our nearest star which wasn’t the sun. That would be Proxima Centauri and it is approximately 4.2 light years away from us.
 What follows next is a gross oversimplification of space travel.
 If we assume that we could travel through space at a speed of 56,000 km/h, it would take 81,000 years to reach the planet. We of course decide to colonise it but we can’t live for 81,000 years — the current world average life expectancy is 70.</description>
@@ -30,21 +30,21 @@ If we assume that we could travel through space at a speed of 56,000 km/h, it wo
     
     <item>
       <title>Buybacks &amp; Investment</title>
-      <link>/post/buybacks-investment/</link>
+      <link>https://hamdiahmed.com/post/buybacks-investment/</link>
       <pubDate>Sun, 12 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/buybacks-investment/</guid>
+      <guid>https://hamdiahmed.com/post/buybacks-investment/</guid>
       <description>Since the Trump tax cuts were approved, there’s been an expected fall in tax revenues from corporations but there’s also been a surge in buybacks.
 There are claims that companies are foregoing investment and using the extra cash to buyback their shares. Buybacks have been on the rise since they became legal in 1982 and corporate investment has been sluggish as this deloitte article explains:
-The general concern is that increasing share buybacks and dividend distribution among nonfinancial corporations is coming at the cost of business investment (which, if undertaken, would lead to long-term gains in productivity and overall economic value).</description>
+The general concern is that increasing share buybacks and dividend distribution among nonfinancial corporations is coming at the cost of business investment (which, if undertaken, would lead to long-term gains in productivity and overall economic value).</description>
     </item>
     
     <item>
       <title>About</title>
-      <link>/about/</link>
+      <link>https://hamdiahmed.com/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/about/</guid>
+      <guid>https://hamdiahmed.com/about/</guid>
       <description>Etiam porta sem malesuada magna mollis euismod. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus. Donec sed odio dui.
 Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
 Nulla vitae elit libero, a pharetra augue.</description>

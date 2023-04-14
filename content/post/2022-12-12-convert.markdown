@@ -1,18 +1,31 @@
 ---
 title: Curious Case of Catalytic Converters
-author: ''
-output: html_document
+author: Hamdi Ahmed
+output: 
+  html_document:
+    highlight: pygments
 date: '2022-12-12'
-slug: []
+slug: convert
 categories: []
 tags: []
 hero: /images/convert.jpg
 excerpt: ~
 ---
 
+<link href="/rmarkdown-libs/vembedr/css/vembedr.css" rel="stylesheet" />
+
 It seems like every time I check the nextdoor <a href="https://nextdoor.co.uk/">website</a>, there’s a new post about a catalytic converter theft. There would often be footage from security cameras accompanying these posts showing just how well coordinated the thefts are - robbers seem to work in teams of 3 or 4, each with a designated role.
 
-{{% youtube "qybMIkySaXk" %}}
+<style type="text/css">
+.vembedr {
+  padding-bottom: 25px;
+}
+</style>
+<div class="vembedr" align="center">
+<div>
+<iframe src="https://www.youtube.com/embed/qybMIkySaXk" width="533" height="300" frameborder="0" allowfullscreen="" data-external="1"></iframe>
+</div>
+</div>
 
 With the number of high street banks <a href="https://www.moneysavingexpert.com/news/2021/12/bank-branch-access-has-shrunk-by-up-to-50--since-2015---but-if-y/" target="_blank">shrinking</a>, it’s starting to feel like cars have become the more attractive item to rob.
 
@@ -26,7 +39,8 @@ Click here for modified code
 </summary>
 <p>
 
-``` r
+``` python
+
 from selenium import webdriver
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from selenium.webdriver.common.by import By
@@ -92,16 +106,18 @@ postings.click()
 # Use Selenium to scroll 'range' number of times
 # Change the second number in 'range(x, y)' to determine how many times you want it to scroll down.
 for i in range(1, 30):
-    
-    driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-    time.sleep(5)
+	
+	driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+	time.sleep(5)
 
-    # Scroll to top to avoid "Unable to click element" error
-    if (i == 1):
-        driver.execute_script("window.scrollTo(0, 0);")
-        time.sleep(5)
+	# Scroll to top to avoid "Unable to click element" error
+	if (i == 1):
+		driver.execute_script("window.scrollTo(0, 0);")
+		time.sleep(5)
 
 time.sleep(5)
+
+
 
 # Scrape the page source returned from Chrome driver for posts
 html_source = driver.page_source
@@ -115,11 +131,11 @@ location_path = './/div[@class="css-77j1dk"]/span/text()'
 post_content_path = './/div[@class="css-1i0jvqo"]/span/text()'
 
 posts = [(post.xpath(author_path)[0],
-          post.xpath(location_path)[1],
-          post.xpath(post_content_path),
-          post) for post in postNodes if post.xpath(author_path) != []]
-          
-          
+ 		  post.xpath(location_path)[1],
+ 		  post.xpath(post_content_path),
+ 		  post) for post in postNodes if post.xpath(author_path) != []]
+ 		  
+ 		  
 # Create CSV Writer for posts
 ofile  = open('posts.csv', "w")
 writer = csv.writer(ofile, delimiter=',', quotechar='"', quoting=csv.QUOTE_ALL)
@@ -129,17 +145,17 @@ post_counter = 1
 # Output to csv file
 for post in posts:
     
-    author = post[0]
+	author = post[0]
 
 
-    location = post[1]
+	location = post[1]
     
     
-    content = post[2]
+	content = post[2]
 
-    writer.writerow([author, location, content])
+	writer.writerow([author, location, content])
 
-    post_counter += 1
+	post_counter += 1
 ```
 
 </p>

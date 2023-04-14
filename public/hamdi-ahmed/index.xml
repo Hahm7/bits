@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hamdi Ahmed on Bits &amp; Thoughts</title>
-    <link>/hamdi-ahmed/</link>
+    <link>https://hamdiahmed.com/hamdi-ahmed/</link>
     <description>Recent content in Hamdi Ahmed on Bits &amp; Thoughts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="/hamdi-ahmed/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://hamdiahmed.com/hamdi-ahmed/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

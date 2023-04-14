@@ -2,19 +2,19 @@
 
 A port of [Narative](https://www.narative.co/)'s Gatsby theme [Novela](https://www.narative.co/labs/novela/)
 
-**This theme requires Hugo extended > 0.55.0**
+**This theme requires Hugo extended > 0.65.0**
 
 ![](https://raw.githubusercontent.com/forestryio/hugo-theme-novela/master/images/tn.png)
 
-The easiest way to get started is to [import this theme in Forestry CMS](https://app.forestry.io/quick-start?repo=forestryio/novela-hugo-starter&engine=hugo&version=0.75.1) in a single click
+The easiest way to get started is to [import this theme in Forestry CMS](https://app.forestry.io/quick-start?repo=forestryio/novela-hugo-starter&engine=hugo&version=0.81.0) in a single click
 
-<a href="https://app.forestry.io/quick-start?repo=forestryio/novela-hugo-starter&engine=hugo&version=0.75.1">
+<a href="https://app.forestry.io/quick-start?repo=forestryio/novela-hugo-starter&engine=hugo&version=0.81.0">
     <img alt="Import this project into Forestry" src="https://assets.forestry.io/import-to-forestryK.svg" />
 </a>
 
 ## Install from the command line
 
-If you don't want to use the [starter](htps://github.com/forestryio/novela-hugo-starter), you can start from scratch and just install this theme from the command line.
+If you don't want to use the [starter](https://github.com/forestryio/novela-hugo-starter), you can start from scratch and just install this theme from the command line.
 
 Create a new Hugo site and initialize your project as a [Hugo module](https://gohugo.io/hugo-modules/use-modules/):
 
