@@ -119,7 +119,7 @@ With the number of high street banks <a href="https://www.moneysavingexpert.com/
 To answer this, I used a python script found <a href="https://github.com/chanwooh/Nextdoor-Script" target="_blank">here</a> and modified it to search the nextdoor website for posts mentioning 'catalytic thefts' and scraped the result into a CSV file.
 
 <details>
-<summary>Click here for modified code</summary>
+<summary>Click here for modified python code</summary>
 <p>
 
 ```python
