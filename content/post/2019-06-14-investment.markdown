@@ -41,7 +41,7 @@ As a component of GDP, measuring investment helps us to measure an economy’s o
 ![](/images/volatile.gif) 
 
 <details>
-<summary>Click here for the graph code</summary>
+<summary>Click here for the graph code created with R</summary>
 <p>
 
 ```r
