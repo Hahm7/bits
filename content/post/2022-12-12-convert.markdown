@@ -35,7 +35,7 @@ To answer this, I used a python script found <a href="https://github.com/chanwoo
 
 <details>
 <summary>
-Click here for modified code in python
+Click here for the modified code in python
 </summary>
 <p>
 
