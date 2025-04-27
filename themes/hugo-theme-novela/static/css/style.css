@@ -1,0 +1,23 @@
+.figure {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 0;
+}
+
+.figure {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 2px; /* Minimal space between image and caption */
+  display: block; /* Ensures proper spacing */
+}
+
+.figure .caption{
+  display: block;
+  font-size: 50px; /* Smaller font */
+  text-align: center;
+  font-style: italic;
+  color: blue;
+  line-height: 1.1; /* Very tight line height */
+  margin-top: 0; /* No extra space at top */
+  padding: 0; /* No padding */
+}

@@ -53,7 +53,7 @@ ggthemr("flat", layout = "clean")
 darken_swatch(0.2)
 
 
-windowsFonts(SansSerif=windowsFont("FiraMono-Regular"))
+# windowsFonts(SansSerif=windowsFont("FiraMono-Regular"))
 
 title = "Net Buybacks and Corporate Tax Revenue"
 

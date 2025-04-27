@@ -1,0 +1,33 @@
+/* Image Container */
+.figure {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 0 1.5rem;
+  max-width: 100%;
+  text-align: center;
+}
+
+/* Images */
+.figure img {
+  max-width: 100%; /* Changed from 10% to fill container */
+  height: auto;
+  margin: 0 auto 0.3em; /* Center image with small bottom margin */
+  display: block;
+  border-radius: 4px; /* Optional subtle rounding */
+}
+
+/* Captions */
+.figure .caption {
+  -webkit-transition: var(--color-mode-transition);
+  -o-transition: var(--color-mode-transition);
+  transition: var(--color-mode-transition);
+  color: var(--accent);
+  display: block;
+  font-size: 0.9em; /* More reasonable size than 50px */
+  font-style: italic;
+  line-height: 1.4; /* Increased from 1.1 */
+  white-space: normal;
+  word-wrap: break-word;
+  margin: 0.5em 0; /* Vertical spacing */
+  padding: 0 1em; /* Horizontal padding */
+}
