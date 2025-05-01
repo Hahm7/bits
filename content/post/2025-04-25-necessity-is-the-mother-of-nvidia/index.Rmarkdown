@@ -1,10 +1,9 @@
 ---
-title: Necessity is the mother of NVIDIA
-author: ''
+title: "Necessity is the mother of NVIDIA"
+description: "How NVIDIA turned early failures and a financial crisis into a breakthrough, using emulation to become a leader in graphics and AI"
+author: 'Hamdi Ahmed'
 date: '2025-04-25'
 slug: []
-categories: []
-tags: []
 hero: /images/nvidia_4.jpg
 excerpt: ~
 ---
@@ -23,7 +22,7 @@ The objects we see in 3D graphics are made up of polygons, which are like the ti
 
 Quadrilaterals’ four points and sides enable smoother surfaces with the potential for better visual quality, but these additional points and sides make them trickier to work with, as the shape can become warped or twisted if one point is slightly out of place.
 
-![](/images/triangles.gif "Triangle sides remain flat when points move.") ![](/images/quads.gif "Quadrilateral sides can exist in different planes which can create twisted shapes when points move.")
+![Triangle polygons remain flat when its points are moved](/images/triangles.gif "Triangle sides remain flat when points move.") ![Quadrilateral polygons can easily warp when its points are moved](/images/quads.gif "Quadrilateral sides can exist in different planes which can create twisted shapes when points move.")
 
 As the industry was transitioning from 2D to 3D graphics, there were no definitive standards set but there was a growing preference for the simplicity and reliability of triangles. NVIDIA’s first product, the NV1 chip, supported both triangle and quadrilateral rendering but it was optimised for the latter believing they would produce better looking graphics using quadratic shapes. There was also a deal with Sega who used a similar approach for their flagship console at the time, the Saturn. Aligning design with Sega’s needs could make it possible for computers equipped with NVIDIA’s chip to play some Saturn games. The NV1 chip was also positioned to handle other things a gamer might need like audio and controller support which was innovative for its time. While NVIDIA’s technical choices made sense in theory, the practical realities of the rapidly evolving graphics market revealed critical flaws with their approach.
 

@@ -1,13 +1,12 @@
 ---
-title: Curious Case of Catalytic Converters
-author: Hamdi Ahmed
+title: "Curious Case of Catalytic Converters"
+description: "Catalytic converter thefts are rising as organised gangs target vehicles for their valuable precious metals. This article examines why these thefts are increasing, how market prices influence the trend, and what the data reveals about this growing crime wave."
+author: "Hamdi Ahmed"
 output: 
   html_document:
     highlight: pygments
 date: '2022-12-12'
 slug: convert
-categories: []
-tags: []
 hero: /images/convert.jpg
 excerpt: ~
 ---
