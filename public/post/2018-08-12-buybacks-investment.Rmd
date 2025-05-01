@@ -1,13 +1,10 @@
 ---
 title: "Buybacks & Investment"
-author: "Hamdi"
+author: "Hamdi Ahmed"
 date: '2019-05-12'
 slug: buybacks-investment
-categories: []
-description: "Since the Trump tax cuts were approved, there's been an expected fall in tax revenues from corporations but there's also been a surge in buybacks. "
-tags: []
-hero: /images/hero-2.jpg
-dropCAP: FALSE
+description: "Explore how the Trump corporate tax cuts fueled a surge in stock buybacks, sparking debate over whether companies are prioritizing shareholder returns over business investment and long-term economic growth."
+hero: /images/buybacks.jpg
 ---
 Since the Trump tax cuts were approved, there's been an expected fall in tax revenues from corporations but there's also been a surge in buybacks.
 
@@ -97,7 +94,7 @@ There are claims that companies are foregoing investment and using the extra cas
 > The general concern is that increasing share buybacks and dividend distribution among nonfinancial corporations is coming at the cost of business investment (which, if undertaken, would lead to long-term gains in productivity and overall economic value).
 
 
-![](/images/deloitte.png)
+![Line graph comparing net capital formation and net share buybacks as a share of net operating surplus for U.S. nonfinancial corporations from 1960 to 2015.](/images/deloitte.png)
 
 A share buyback is the act of returning cash to shareholders by buying common shares held by them. Those who sell their shares will receive the cash and those who don't sell get a larger piece of corporate profits. However, corporations may issue new shares in the same time period as they buy back shares. It’s best to look at net share buybacks as this number takes into account the amount left over for investment.
 
