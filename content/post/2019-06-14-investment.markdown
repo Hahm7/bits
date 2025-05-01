@@ -1,11 +1,10 @@
 ---
-title: Investment
-author: Hamdi Ahmed
+title: "Investment"
+description: "Explore how uncertainty, rapid technological change, and declining returns are impacting business investment, with insights on why companies may be investing less despite economic growth."
+author: "Hamdi Ahmed"
 output: html_document
 date: '2019-06-14'
 slug: investment
-categories: []
-tags: []
 hero: /images/test.jpg
 excerpt: ~
 ---
@@ -38,7 +37,7 @@ As a component of GDP, measuring investment helps us to measure an economy’s o
 
 
 
-![](/images/volatile.gif) 
+![Line graph showing how investment is a volatile component of GDP](/images/volatile.gif) 
 
 <details>
 <summary>Click here for the graph code created with R</summary>
@@ -212,7 +211,7 @@ Firms who invest are not capturing most of the benefits. This is a point raised 
 
 Nordhaus studied this at the height of the 90s tech boom but <a href="https://voxeu.org/article/ideas-aren-t-running-out-they-are-getting-more-expensive-find" target="_blank">Nicholas Bloom et al</a> find that producing ideas has only got more expensive in comparison to the slowdown in productivity growth. They measured economy wide research input and found that this has been increasing dramatically while productivity growth has been slowing down. More researchers are needed now to produce the same amount of ideas.
 
-![](/images/expensive.png)
+![Graph showing flat U.S. TFP growth since 1930 while the number of researchers has risen sharply." ](/images/expensive.png)
 
 This finding is not only evident on the aggregate but shows up in different industries and products.
 
