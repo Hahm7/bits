@@ -1,4 +1,11 @@
+# R / RStudio
 .Rproj.user
 .Rhistory
 .RData
 .Ruserdata
+# OS junk
+.DS_Store
+Thumbs.db
+# Editor / lock files
+*.lock~
+.hugo_build.lock
