@@ -1,6 +1,6 @@
 # Bits & Thoughts
 
-Personal website of [Hamdi Ahmed](https://hamdiahmed.com): essays on companies and the economics behind how they behave.
+Personal website with essays on companies and the economics behind how they behave.
 
 **Live site:** [hamdiahmed.com](https://hamdiahmed.com)
 
